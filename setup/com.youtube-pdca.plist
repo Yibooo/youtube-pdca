@@ -7,11 +7,11 @@
     <key>Label</key>
     <string>com.youtube-pdca</string>
 
-    <!-- 実行コマンド -->
+    <!-- 実行コマンド（VOICEVOXエンジン起動 + 日次サイクル） -->
     <key>ProgramArguments</key>
     <array>
-        <string>VENV_PYTHON_PATH</string>
-        <string>PROJECT_DIR/scripts/daily_cycle.py</string>
+        <string>/bin/bash</string>
+        <string>PROJECT_DIR/setup/start_with_voicevox.sh</string>
     </array>
 
     <!-- 毎日09:00に実行 -->

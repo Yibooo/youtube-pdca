@@ -138,6 +138,10 @@
     "max_videos_per_day": 2
   },
   "tts": {
+    "engine": "voicevox",
+    "voicevox_speaker": 30,
+    "voicevox_speed": 1.15,
+    "voicevox_host": "http://127.0.0.1:50021",
     "voice": "Kyoko",
     "rate": 175
   },
