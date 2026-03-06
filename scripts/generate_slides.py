@@ -159,7 +159,7 @@ def _slide_intro(draw, fonts, data, channel_name, slide_num, total):
     heading = data.get("heading", "この動画で学べること")
 
     # 左アクセントバー ＋ 見出し
-    draw.rectangle([(50, 100), (18, 240)], fill=COLOR["gold"])
+    draw.rectangle([(18, 100), (50, 240)], fill=COLOR["gold"])
     draw.text((80, 110), heading, font=fonts["md"], fill=COLOR["gold"])
 
     points = data.get("points", [])
@@ -180,7 +180,7 @@ def _slide_problem(draw, fonts, data, channel_name, slide_num, total):
     heading = data.get("heading", "")
 
     # 赤みがかったアクセントバー
-    draw.rectangle([(50, 100), (18, 220)], fill=COLOR["warning"])
+    draw.rectangle([(18, 100), (50, 220)], fill=COLOR["warning"])
     draw.text((80, 110), heading, font=fonts["sm"], fill=COLOR["warning"])
 
     points = data.get("points", [])
@@ -199,7 +199,7 @@ def _slide_section(draw, fonts, data, channel_name, slide_num, total):
     heading = data.get("heading", "")
 
     # 青アクセントバー ＋ 見出し
-    draw.rectangle([(50, 100), (18, 240)], fill=COLOR["accent"])
+    draw.rectangle([(18, 100), (50, 240)], fill=COLOR["accent"])
     draw.text((80, 110), heading, font=fonts["md"], fill=COLOR["white"])
     draw.line([(80, 240), (1840, 240)], fill=COLOR["accent"], width=2)
 
@@ -218,7 +218,7 @@ def _slide_mistakes(draw, fonts, data, channel_name, slide_num, total):
 
     heading = data.get("heading", "よくある失敗")
 
-    draw.rectangle([(50, 100), (18, 240)], fill=COLOR["warning"])
+    draw.rectangle([(18, 100), (50, 240)], fill=COLOR["warning"])
     draw.text((80, 110), heading, font=fonts["md"], fill=COLOR["warning"])
     draw.line([(80, 240), (1840, 240)], fill=COLOR["warning"], width=2)
 
@@ -239,7 +239,7 @@ def _slide_cta(draw, fonts, data, channel_name, slide_num, total):
     heading = data.get("heading", "まとめ")
 
     # ゴールドアクセント
-    draw.rectangle([(50, 100), (18, 240)], fill=COLOR["gold"])
+    draw.rectangle([(18, 100), (50, 240)], fill=COLOR["gold"])
     draw.text((80, 110), heading, font=fonts["md"], fill=COLOR["gold"])
     draw.line([(80, 240), (1840, 240)], fill=COLOR["gold"], width=2)
 
