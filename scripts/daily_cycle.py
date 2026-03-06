@@ -38,6 +38,23 @@ def _load_config():
         return json.load(f)
 
 
+def _push_state_to_github():
+    """state.json の変更を GitHub にプッシュして Mission Control から確認できるようにする。"""
+    import subprocess
+    today = datetime.now().strftime("%Y-%m-%d")
+    cmds = [
+        ["git", "add", "state.json"],
+        ["git", "commit", "--allow-empty", "-m", f"[auto] PDCA日次結果 {today}"],
+        ["git", "push", "origin", "main"],
+    ]
+    for cmd in cmds:
+        result = subprocess.run(cmd, cwd=str(ROOT_DIR), capture_output=True, text=True, timeout=30)
+        if result.returncode != 0 and "nothing to commit" not in result.stdout:
+            logger.warning(f"⚠️  git {cmd[1]} エラー: {result.stderr.strip()}")
+            return
+    logger.info("✅ state.json → GitHub プッシュ完了（Mission Control で確認可能）")
+
+
 def _cleanup_output():
     """output/ ディレクトリの古いファイルを削除（ディスク節約）"""
     import shutil, time
@@ -167,6 +184,9 @@ def run():
 
     # 古い出力ファイルを削除
     _cleanup_output()
+
+    # ── Phase 4: state.json を GitHub にプッシュ（Mission Control で確認可能にする）──
+    _push_state_to_github()
 
     logger.info(f"\n✅ 本日のサイクル完了: {n_uploaded}/{max_videos}本アップロード")
     logger.info("="*60)
