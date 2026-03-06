@@ -1,0 +1,12 @@
+credentials.json
+token.json
+output/
+logs/
+__pycache__/
+*.pyc
+venv/
+.DS_Store
+*.aiff
+*.wav
+*.mp4
+*.png

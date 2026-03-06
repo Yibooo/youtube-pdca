@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- ジョブ識別子 -->
+    <key>Label</key>
+    <string>com.youtube-pdca</string>
+
+    <!-- 実行コマンド -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>VENV_PYTHON_PATH</string>
+        <string>PROJECT_DIR/scripts/daily_cycle.py</string>
+    </array>
+
+    <!-- 毎日09:00に実行 -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>9</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <!-- 作業ディレクトリ -->
+    <key>WorkingDirectory</key>
+    <string>PROJECT_DIR</string>
+
+    <!-- ログ出力 -->
+    <key>StandardOutPath</key>
+    <string>PROJECT_DIR/logs/launchd_stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>PROJECT_DIR/logs/launchd_stderr.log</string>
+
+    <!-- 環境変数 -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/opt/homebrew/bin</string>
+        <key>HOME</key>
+        <string>HOME_DIR</string>
+    </dict>
+
+    <!-- 失敗時の再実行なし（翌日まで待つ） -->
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>
