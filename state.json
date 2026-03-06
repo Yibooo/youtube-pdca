@@ -1,0 +1,42 @@
+{
+  "videos": [
+    {
+      "video_id": "PcbpY8Zxrdk",
+      "title": "新NISAの始め方【30代が知るべき3ステップ】",
+      "hypothesis": {
+        "theme_id": "nisa_basics",
+        "theme_name": "新NISAの始め方",
+        "target": "30代投資初心者",
+        "need": "損しない口座開設",
+        "keyword": "新NISA",
+        "tags": ["新NISA", "NISA", "投資", "資産形成", "初心者", "積立投資", "インデックス投資", "口座開設"]
+      },
+      "upload_time": "2026-03-06T12:47:57.721146+00:00",
+      "views_48h": null,
+      "status": "pending_check",
+      "tts_engine": "voicevox",
+      "checked_at": null
+    },
+    {
+      "video_id": "9ttdVZI4zh4",
+      "title": "NISAで損する人の特徴5つ【知らないと後悔する】",
+      "hypothesis": {
+        "theme_id": "nisa_mistakes",
+        "theme_name": "NISAで損する人の特徴",
+        "target": "NISA検討中・運用中の会社員",
+        "need": "よくある失敗を避けたい",
+        "keyword": "NISA失敗",
+        "tags": ["新NISA", "NISA", "投資失敗", "資産形成", "注意点", "初心者", "積立NISA"]
+      },
+      "upload_time": "2026-03-06T12:48:27.922592+00:00",
+      "views_48h": null,
+      "status": "pending_check",
+      "tts_engine": "voicevox",
+      "checked_at": null
+    }
+  ],
+  "used_themes": ["nisa_basics", "nisa_mistakes"],
+  "pivot_count": 0,
+  "success_patterns": [],
+  "last_run": null
+}
