@@ -1,0 +1,52 @@
+{
+  "date": "2026-03-14",
+  "generated_at": "2026-03-14T00:00:00+00:00",
+  "today_uploaded": [],
+  "checked_today": [],
+  "check_summary": {
+    "checked": 0,
+    "success": 0,
+    "pivoted": 0
+  },
+  "channel_stats": {
+    "total_videos": 2,
+    "success_count": 0,
+    "pivot_count": 0,
+    "pending_count": 2,
+    "overall_avg_views": 0
+  },
+  "performance_insights": {
+    "best_title_formula": null,
+    "best_thumbnail_style": null,
+    "best_hook_style": null,
+    "total_experiments": 0,
+    "note": "データ蓄積中 — 明日から自動PDCA開始"
+  },
+  "performance_db_summary": {
+    "title_formulas": {
+      "listicle":  {"trials": 0, "avg_views": 0, "score": 0.5},
+      "question":  {"trials": 0, "avg_views": 0, "score": 0.5},
+      "reversal":  {"trials": 0, "avg_views": 0, "score": 0.5},
+      "urgency":   {"trials": 0, "avg_views": 0, "score": 0.5},
+      "secret":    {"trials": 0, "avg_views": 0, "score": 0.5},
+      "steps":     {"trials": 0, "avg_views": 0, "score": 0.5},
+      "target":    {"trials": 0, "avg_views": 0, "score": 0.5}
+    },
+    "thumbnail_styles": {
+      "dark_navy":     {"trials": 0, "avg_views": 0, "score": 0.5},
+      "bright_red":    {"trials": 0, "avg_views": 0, "score": 0.5},
+      "bright_yellow": {"trials": 0, "avg_views": 0, "score": 0.5},
+      "gradient_blue": {"trials": 0, "avg_views": 0, "score": 0.5},
+      "split_dark":    {"trials": 0, "avg_views": 0, "score": 0.5},
+      "minimal_white": {"trials": 0, "avg_views": 0, "score": 0.5}
+    },
+    "hook_styles": {
+      "problem":  {"trials": 0, "avg_views": 0, "score": 0.5},
+      "number":   {"trials": 0, "avg_views": 0, "score": 0.5},
+      "result":   {"trials": 0, "avg_views": 0, "score": 0.5},
+      "reversal": {"trials": 0, "avg_views": 0, "score": 0.5},
+      "question": {"trials": 0, "avg_views": 0, "score": 0.5}
+    }
+  },
+  "next_run": "tomorrow 09:00 JST"
+}

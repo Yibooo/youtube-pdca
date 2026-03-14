@@ -361,22 +361,48 @@ THEMES_DATA = {
 }
 
 
-def generate(theme_id: str) -> dict:
+def _apply_hook(slides: list, hook_text: str, hook_style: str) -> list:
+    """
+    スライド1のナレーション冒頭にフック文を挿入する。
+    元のナレーションは保持し、フック文を先頭に追加。
+    """
+    import copy
+    result = copy.deepcopy(slides)
+    if result and hook_text:
+        original = result[0].get("narration", "")
+        result[0]["narration"] = hook_text + " " + original
+        result[0]["hook_style"] = hook_style
+    return result
+
+
+def generate(theme_id: str, title: str = None, hook_text: str = None,
+             hook_style: str = None) -> dict:
     """
     指定テーマのスクリプトデータを返す。
+    Args:
+        theme_id: テーマID
+        title: カスタムタイトル（Noneなら固定タイトル）
+        hook_text: 冒頭フック文（Noneなら変更なし）
+        hook_style: フックスタイル名（ログ用）
     Returns:
-        dict: {
-            "title": str,
-            "description": str,
-            "slides": list of slide dicts
-        }
+        dict: {"title": str, "description": str, "slides": list}
     """
     if theme_id not in THEMES_DATA:
         raise ValueError(f"テーマが見つかりません: {theme_id}")
 
-    data = THEMES_DATA[theme_id]
+    import copy
+    data = copy.deepcopy(THEMES_DATA[theme_id])
+
+    # タイトルを仮説のものに置き換え
+    if title:
+        data["title"] = title
+
+    # フック文をスライド1冒頭に挿入
+    if hook_text:
+        data["slides"] = _apply_hook(data["slides"], hook_text, hook_style or "default")
+
     print(f"📝 スクリプト生成: {data['title']}")
-    print(f"   スライド数: {len(data['slides'])}枚")
+    print(f"   スライド数: {len(data['slides'])}枚  フック: {hook_style or 'original'}")
     return data
 
 

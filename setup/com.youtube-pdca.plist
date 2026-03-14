@@ -3,15 +3,14 @@
   "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <!-- ジョブ識別子 -->
     <key>Label</key>
     <string>com.youtube-pdca</string>
 
-    <!-- 実行コマンド（VOICEVOXエンジン起動 + 日次サイクル） -->
+    <!-- bash wrapper を廃止。Python を直接呼ぶ（VOICEVOX起動はPython内で処理） -->
     <key>ProgramArguments</key>
     <array>
-        <string>/bin/bash</string>
-        <string>PROJECT_DIR/setup/start_with_voicevox.sh</string>
+        <string>VENV_PYTHON_PATH</string>
+        <string>PROJECT_DIR/scripts/daily_cycle.py</string>
     </array>
 
     <!-- 毎日09:00に実行 -->
@@ -23,27 +22,29 @@
         <integer>0</integer>
     </dict>
 
-    <!-- 作業ディレクトリ -->
     <key>WorkingDirectory</key>
     <string>PROJECT_DIR</string>
 
-    <!-- ログ出力 -->
     <key>StandardOutPath</key>
     <string>PROJECT_DIR/logs/launchd_stdout.log</string>
     <key>StandardErrorPath</key>
     <string>PROJECT_DIR/logs/launchd_stderr.log</string>
 
-    <!-- 環境変数 -->
     <key>EnvironmentVariables</key>
     <dict>
         <key>PATH</key>
-        <string>/usr/local/bin:/usr/bin:/bin:/opt/homebrew/bin</string>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
         <key>HOME</key>
         <string>HOME_DIR</string>
+        <key>LANG</key>
+        <string>ja_JP.UTF-8</string>
     </dict>
 
-    <!-- 失敗時の再実行なし（翌日まで待つ） -->
     <key>RunAtLoad</key>
     <false/>
+
+    <!-- 失敗しても自動再試行しない（翌日まで待つ） -->
+    <key>ThrottleInterval</key>
+    <integer>3600</integer>
 </dict>
 </plist>

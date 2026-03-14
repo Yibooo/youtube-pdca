@@ -119,6 +119,13 @@ def check_and_update() -> dict:
             results["pivoted"] += 1
             print(f"   🔄 PIVOT: {views}回（閾値{threshold}回未満）")
 
+        # ── パフォーマンスDBに記録（ルールベースPDCA学習） ──
+        try:
+            from hypothesis_engine import update_performance
+            update_performance(video)
+        except Exception as e:
+            print(f"   ⚠️ パフォーマンスDB更新スキップ: {e}")
+
     save_state(state)
 
     print(f"\n📈 チェック完了: {results['checked']}件")

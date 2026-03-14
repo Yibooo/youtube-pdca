@@ -49,21 +49,52 @@ def _load_fonts():
     return fonts
 
 
-def _make_canvas():
-    """グラデーション背景のキャンバスを作成"""
+# ── サムネスタイル別カラーパレット ──
+THUMB_PALETTES = {
+    "dark_navy":     {"top": (10, 20, 40),   "bot": (20, 40, 80),   "text": (255,255,255), "accent": (212,170,50),  "bar": (212,170,50)},
+    "bright_red":    {"top": (180, 10, 20),  "bot": (220, 40, 50),  "text": (255,255,255), "accent": (255,220,0),   "bar": (255,220,0)},
+    "bright_yellow": {"top": (230, 200, 0),  "bot": (255, 230, 0),  "text": (20, 20, 20),  "accent": (180, 0, 0),   "bar": (180, 0, 0)},
+    "gradient_blue": {"top": (5, 50, 120),   "bot": (10, 90, 200),  "text": (255,255,255), "accent": (100,220,255), "bar": (100,220,255)},
+    "split_dark":    {"top": (10, 20, 40),   "bot": (20, 40, 80),   "text": (255,255,255), "accent": (212,170,50),  "bar": (212,170,50)},
+    "minimal_white": {"top": (245, 245, 250),"bot": (230, 235, 245),"text": (20, 20, 40),  "accent": (60, 100, 200),"bar": (60, 100, 200)},
+}
+
+_current_palette: dict = THUMB_PALETTES["dark_navy"]
+
+
+def _make_canvas(thumbnail_style: str = "dark_navy"):
+    """グラデーション背景のキャンバスを作成（スタイル切り替え対応）"""
+    global _current_palette
+    palette = THUMB_PALETTES.get(thumbnail_style, THUMB_PALETTES["dark_navy"])
+    _current_palette = palette
+
+    # カラーをパレットで上書き
+    COLOR["bar"]   = palette["bar"]
+    COLOR["white"] = palette["text"]
+    COLOR["gold"]  = palette["accent"]
+
     img = Image.new("RGB", (W, H))
     draw = ImageDraw.Draw(img)
-    t, b = COLOR["bg_top"], COLOR["bg_bot"]
+    t, b = palette["top"], palette["bot"]
     for y in range(H):
-        r = int(t[0] + (b[0] - t[0]) * y / H)
-        g = int(t[1] + (b[1] - t[1]) * y / H)
+        rv = int(t[0] + (b[0] - t[0]) * y / H)
+        gv = int(t[1] + (b[1] - t[1]) * y / H)
         bv = int(t[2] + (b[2] - t[2]) * y / H)
-        draw.line([(0, y), (W, y)], fill=(r, g, bv))
-    # ノイズテクスチャ（既存コードから流用）
-    for _ in range(2000):
-        x, y = random.randint(0, W-1), random.randint(0, H-1)
-        v = random.randint(0, 15)
-        draw.point((x, y), fill=(v, v, v + 5))
+        draw.line([(0, y), (W, y)], fill=(rv, gv, bv))
+
+    # split_dark スタイルは左1/3を明るくする（大数字エリア）
+    if thumbnail_style == "split_dark":
+        for y in range(H):
+            for x in range(0, W // 3):
+                draw.point((x, y), fill=(30, 60, 120))
+        draw.line([(W // 3, 0), (W // 3, H)], fill=(212, 170, 50), width=6)
+
+    # ノイズテクスチャ
+    if thumbnail_style not in ("minimal_white", "bright_yellow"):
+        for _ in range(1500):
+            x, y = random.randint(0, W-1), random.randint(0, H-1)
+            v = random.randint(0, 12)
+            draw.point((x, y), fill=(v, v, v + 5))
     return img, draw
 
 
@@ -270,13 +301,16 @@ SLIDE_RENDERERS = {
 }
 
 
-def generate(slides_data: list, theme_id: str, channel_name: str = "マネー研究所") -> list:
+def generate(slides_data: list, theme_id: str, channel_name: str = "マネー研究所",
+             thumbnail_style: str = "dark_navy") -> list:
     """
     スライドデータから画像リストを生成。
     Args:
         slides_data: generate_script.pyのslides配列
         theme_id: テーマID（ファイル名に使用）
         channel_name: チャンネル名
+        thumbnail_style: サムネスタイル（dark_navy/bright_red/bright_yellow/
+                         gradient_blue/split_dark/minimal_white）
     Returns:
         list of str: 生成した画像ファイルパスのリスト
     """
@@ -287,7 +321,9 @@ def generate(slides_data: list, theme_id: str, channel_name: str = "マネー研
     paths = []
 
     for i, slide in enumerate(slides_data):
-        img, draw = _make_canvas()
+        # スライド1（タイトル）だけスタイル適用、残りはdark_navyに戻す
+        style = thumbnail_style if i == 0 else "dark_navy"
+        img, draw = _make_canvas(style)
         slide_type = slide.get("type", "section")
         renderer = SLIDE_RENDERERS.get(slide_type, _slide_section)
         renderer(draw, fonts, slide, channel_name, i + 1, total)
