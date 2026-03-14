@@ -108,14 +108,73 @@
       "views_48h": null,
       "status": "pending_check",
       "checked_at": null
+    },
+    {
+      "video_id": "UYksydzylow",
+      "upload_time": "2026-03-14T02:00:56.357413+00:00",
+      "hypothesis": {
+        "theme_id": "fire_calc",
+        "theme_name": "FIRE計算シミュレーション",
+        "target": "30〜40代会社員",
+        "need": "早期退職の現実を知りたい",
+        "keyword": "FIRE計算",
+        "tags": [
+          "FIRE",
+          "早期退職",
+          "資産形成",
+          "セミリタイア",
+          "4%ルール",
+          "経済的自由"
+        ],
+        "title": "FIRE計算シミュレーションで絶対やってはいけない7つのこと",
+        "title_formula": "listicle",
+        "thumbnail_style": "bright_yellow",
+        "hook_style": "problem",
+        "hook_text": "今日は「FIRE計算シミュレーション」について解説します。早期退職の現実を知りたいで困っている方、必見です。"
+      },
+      "title": "FIRE計算シミュレーションで絶対やってはいけない7つのこと",
+      "views_48h": null,
+      "status": "pending_check",
+      "checked_at": null
+    },
+    {
+      "video_id": "B7wsKIeM_rA",
+      "upload_time": "2026-03-14T02:01:34.769028+00:00",
+      "hypothesis": {
+        "theme_id": "dividend_stock",
+        "theme_name": "高配当株の選び方",
+        "target": "配当収入を得たい投資家",
+        "need": "毎月の不労所得を作りたい",
+        "keyword": "高配当株",
+        "tags": [
+          "高配当株",
+          "配当金",
+          "不労所得",
+          "株式投資",
+          "資産形成",
+          "インカムゲイン",
+          "長期投資"
+        ],
+        "title": "知らないと損する！高配当株の選び方の7つのポイント",
+        "title_formula": "listicle",
+        "thumbnail_style": "split_dark",
+        "hook_style": "problem",
+        "hook_text": "今日は「高配当株の選び方」について解説します。毎月の不労所得を作りたいで困っている方、必見です。"
+      },
+      "title": "知らないと損する！高配当株の選び方の7つのポイント",
+      "views_48h": null,
+      "status": "pending_check",
+      "checked_at": null
     }
   ],
   "used_themes": [
     "nisa_basics",
     "nisa_mistakes",
-    "income_structure"
+    "income_structure",
+    "fire_calc",
+    "dividend_stock"
   ],
   "pivot_count": 2,
   "success_patterns": [],
-  "last_run": "2026-03-14T01:46:17.229874+00:00"
+  "last_run": "2026-03-14T02:01:34.777933+00:00"
 }
