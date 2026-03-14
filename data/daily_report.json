@@ -1,13 +1,32 @@
 {
   "date": "2026-03-14",
-  "generated_at": "2026-03-14T01:34:08.195534+00:00",
-  "today_uploaded": [],
+  "generated_at": "2026-03-14T01:46:17.228949+00:00",
+  "today_uploaded": [
+    {
+      "video_id": "_Hcqq6fCgig",
+      "title": "みんなが収入複線化で失敗する理由【正しいやり方教えます】",
+      "theme_id": "income_structure",
+      "title_formula": "reversal",
+      "thumbnail_style": "dark_navy",
+      "hook_style": "reversal",
+      "upload_time": "2026-03-14T01:45:13+00:00"
+    },
+    {
+      "video_id": "D4p02WPX7-o",
+      "title": "NISA失敗でよくある失敗を避けたいする人の特徴7選",
+      "theme_id": "nisa_mistakes",
+      "title_formula": "listicle",
+      "thumbnail_style": "bright_red",
+      "hook_style": "result",
+      "upload_time": "2026-03-14T01:45:47+00:00"
+    }
+  ],
   "checked_today": [
     {
       "video_id": "PcbpY8Zxrdk",
       "title": "新NISAの始め方【30代が知るべき3ステップ】",
-      "views_48h": -1,
-      "status": "pending_check",
+      "views_48h": 1,
+      "status": "pivoted",
       "title_formula": "unknown",
       "thumbnail_style": "unknown",
       "hook_style": "unknown"
@@ -15,30 +34,30 @@
     {
       "video_id": "9ttdVZI4zh4",
       "title": "NISAで損する人の特徴5つ【知らないと後悔する】",
-      "views_48h": -1,
-      "status": "pending_check",
+      "views_48h": 0,
+      "status": "pivoted",
       "title_formula": "unknown",
       "thumbnail_style": "unknown",
       "hook_style": "unknown"
     }
   ],
   "check_summary": {
-    "checked": 0,
+    "checked": 2,
     "success": 0,
-    "pivoted": 0
+    "pivoted": 2
   },
   "channel_stats": {
-    "total_videos": 2,
+    "total_videos": 4,
     "success_count": 0,
-    "pivot_count": 0,
+    "pivot_count": 2,
     "pending_count": 2,
-    "overall_avg_views": -2.0
+    "overall_avg_views": 0.5
   },
   "performance_insights": {
     "best_title_formula": "未試行",
     "best_thumbnail": "未試行",
     "best_hook": "未試行",
-    "best_theme": "データ不足",
+    "best_theme": "nisa_basics (avg 1.0再生 / 1試行)",
     "total_experiments": 0
   },
   "performance_db_summary": {

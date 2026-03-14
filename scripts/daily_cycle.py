@@ -89,7 +89,7 @@ def _write_daily_report(check_results: dict, uploaded_videos: list,
 
     checked_today = []
     for v in state["videos"]:
-        if v.get("checked_at", "").startswith(datetime.now().strftime("%Y-%m-%d")):
+        if (v.get("checked_at") or "").startswith(datetime.now().strftime("%Y-%m-%d")):
             hyp = v.get("hypothesis", {})
             checked_today.append({
                 "video_id":        v["video_id"],

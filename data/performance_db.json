@@ -1,28 +1,131 @@
 {
   "title_formulas": {
-    "listicle":  {"trials": 0, "total_views": 0, "avg_views": 0, "score": 0.5},
-    "question":  {"trials": 0, "total_views": 0, "avg_views": 0, "score": 0.5},
-    "reversal":  {"trials": 0, "total_views": 0, "avg_views": 0, "score": 0.5},
-    "urgency":   {"trials": 0, "total_views": 0, "avg_views": 0, "score": 0.5},
-    "secret":    {"trials": 0, "total_views": 0, "avg_views": 0, "score": 0.5},
-    "steps":     {"trials": 0, "total_views": 0, "avg_views": 0, "score": 0.5},
-    "target":    {"trials": 0, "total_views": 0, "avg_views": 0, "score": 0.5}
+    "listicle": {
+      "trials": 0,
+      "total_views": 0,
+      "avg_views": 0,
+      "score": 0.5
+    },
+    "question": {
+      "trials": 0,
+      "total_views": 0,
+      "avg_views": 0,
+      "score": 0.5
+    },
+    "reversal": {
+      "trials": 0,
+      "total_views": 0,
+      "avg_views": 0,
+      "score": 0.5
+    },
+    "urgency": {
+      "trials": 0,
+      "total_views": 0,
+      "avg_views": 0,
+      "score": 0.5
+    },
+    "secret": {
+      "trials": 0,
+      "total_views": 0,
+      "avg_views": 0,
+      "score": 0.5
+    },
+    "steps": {
+      "trials": 0,
+      "total_views": 0,
+      "avg_views": 0,
+      "score": 0.5
+    },
+    "target": {
+      "trials": 0,
+      "total_views": 0,
+      "avg_views": 0,
+      "score": 0.5
+    }
   },
   "thumbnail_styles": {
-    "dark_navy":    {"trials": 0, "total_views": 0, "avg_views": 0, "score": 0.5},
-    "bright_red":   {"trials": 0, "total_views": 0, "avg_views": 0, "score": 0.5},
-    "bright_yellow":{"trials": 0, "total_views": 0, "avg_views": 0, "score": 0.5},
-    "gradient_blue":{"trials": 0, "total_views": 0, "avg_views": 0, "score": 0.5},
-    "split_dark":   {"trials": 0, "total_views": 0, "avg_views": 0, "score": 0.5},
-    "minimal_white":{"trials": 0, "total_views": 0, "avg_views": 0, "score": 0.5}
+    "dark_navy": {
+      "trials": 0,
+      "total_views": 0,
+      "avg_views": 0,
+      "score": 0.5
+    },
+    "bright_red": {
+      "trials": 0,
+      "total_views": 0,
+      "avg_views": 0,
+      "score": 0.5
+    },
+    "bright_yellow": {
+      "trials": 0,
+      "total_views": 0,
+      "avg_views": 0,
+      "score": 0.5
+    },
+    "gradient_blue": {
+      "trials": 0,
+      "total_views": 0,
+      "avg_views": 0,
+      "score": 0.5
+    },
+    "split_dark": {
+      "trials": 0,
+      "total_views": 0,
+      "avg_views": 0,
+      "score": 0.5
+    },
+    "minimal_white": {
+      "trials": 0,
+      "total_views": 0,
+      "avg_views": 0,
+      "score": 0.5
+    }
   },
   "hook_styles": {
-    "problem":   {"trials": 0, "total_views": 0, "avg_views": 0, "score": 0.5},
-    "number":    {"trials": 0, "total_views": 0, "avg_views": 0, "score": 0.5},
-    "result":    {"trials": 0, "total_views": 0, "avg_views": 0, "score": 0.5},
-    "reversal":  {"trials": 0, "total_views": 0, "avg_views": 0, "score": 0.5},
-    "question":  {"trials": 0, "total_views": 0, "avg_views": 0, "score": 0.5}
+    "problem": {
+      "trials": 0,
+      "total_views": 0,
+      "avg_views": 0,
+      "score": 0.5
+    },
+    "number": {
+      "trials": 0,
+      "total_views": 0,
+      "avg_views": 0,
+      "score": 0.5
+    },
+    "result": {
+      "trials": 0,
+      "total_views": 0,
+      "avg_views": 0,
+      "score": 0.5
+    },
+    "reversal": {
+      "trials": 0,
+      "total_views": 0,
+      "avg_views": 0,
+      "score": 0.5
+    },
+    "question": {
+      "trials": 0,
+      "total_views": 0,
+      "avg_views": 0,
+      "score": 0.5
+    }
   },
-  "themes": {},
-  "last_updated": null
+  "themes": {
+    "nisa_basics": {
+      "trials": 1,
+      "total_views": 1,
+      "avg_views": 1.0,
+      "score": 0.02
+    },
+    "nisa_mistakes": {
+      "trials": 1,
+      "total_views": 0,
+      "avg_views": 0.0,
+      "score": 0.0
+    }
+  },
+  "last_updated": "2026-03-14T01:44:39.947262+00:00"
 }
