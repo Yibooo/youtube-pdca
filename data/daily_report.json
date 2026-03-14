@@ -1,8 +1,27 @@
 {
   "date": "2026-03-14",
-  "generated_at": "2026-03-14T00:00:00+00:00",
+  "generated_at": "2026-03-14T01:34:08.195534+00:00",
   "today_uploaded": [],
-  "checked_today": [],
+  "checked_today": [
+    {
+      "video_id": "PcbpY8Zxrdk",
+      "title": "新NISAの始め方【30代が知るべき3ステップ】",
+      "views_48h": -1,
+      "status": "pending_check",
+      "title_formula": "unknown",
+      "thumbnail_style": "unknown",
+      "hook_style": "unknown"
+    },
+    {
+      "video_id": "9ttdVZI4zh4",
+      "title": "NISAで損する人の特徴5つ【知らないと後悔する】",
+      "views_48h": -1,
+      "status": "pending_check",
+      "title_formula": "unknown",
+      "thumbnail_style": "unknown",
+      "hook_style": "unknown"
+    }
+  ],
   "check_summary": {
     "checked": 0,
     "success": 0,
@@ -13,39 +32,111 @@
     "success_count": 0,
     "pivot_count": 0,
     "pending_count": 2,
-    "overall_avg_views": 0
+    "overall_avg_views": -2.0
   },
   "performance_insights": {
-    "best_title_formula": null,
-    "best_thumbnail_style": null,
-    "best_hook_style": null,
-    "total_experiments": 0,
-    "note": "データ蓄積中 — 明日から自動PDCA開始"
+    "best_title_formula": "未試行",
+    "best_thumbnail": "未試行",
+    "best_hook": "未試行",
+    "best_theme": "データ不足",
+    "total_experiments": 0
   },
   "performance_db_summary": {
     "title_formulas": {
-      "listicle":  {"trials": 0, "avg_views": 0, "score": 0.5},
-      "question":  {"trials": 0, "avg_views": 0, "score": 0.5},
-      "reversal":  {"trials": 0, "avg_views": 0, "score": 0.5},
-      "urgency":   {"trials": 0, "avg_views": 0, "score": 0.5},
-      "secret":    {"trials": 0, "avg_views": 0, "score": 0.5},
-      "steps":     {"trials": 0, "avg_views": 0, "score": 0.5},
-      "target":    {"trials": 0, "avg_views": 0, "score": 0.5}
+      "listicle": {
+        "trials": 0,
+        "avg_views": 0,
+        "score": 0.5
+      },
+      "question": {
+        "trials": 0,
+        "avg_views": 0,
+        "score": 0.5
+      },
+      "reversal": {
+        "trials": 0,
+        "avg_views": 0,
+        "score": 0.5
+      },
+      "urgency": {
+        "trials": 0,
+        "avg_views": 0,
+        "score": 0.5
+      },
+      "secret": {
+        "trials": 0,
+        "avg_views": 0,
+        "score": 0.5
+      },
+      "steps": {
+        "trials": 0,
+        "avg_views": 0,
+        "score": 0.5
+      },
+      "target": {
+        "trials": 0,
+        "avg_views": 0,
+        "score": 0.5
+      }
     },
     "thumbnail_styles": {
-      "dark_navy":     {"trials": 0, "avg_views": 0, "score": 0.5},
-      "bright_red":    {"trials": 0, "avg_views": 0, "score": 0.5},
-      "bright_yellow": {"trials": 0, "avg_views": 0, "score": 0.5},
-      "gradient_blue": {"trials": 0, "avg_views": 0, "score": 0.5},
-      "split_dark":    {"trials": 0, "avg_views": 0, "score": 0.5},
-      "minimal_white": {"trials": 0, "avg_views": 0, "score": 0.5}
+      "dark_navy": {
+        "trials": 0,
+        "avg_views": 0,
+        "score": 0.5
+      },
+      "bright_red": {
+        "trials": 0,
+        "avg_views": 0,
+        "score": 0.5
+      },
+      "bright_yellow": {
+        "trials": 0,
+        "avg_views": 0,
+        "score": 0.5
+      },
+      "gradient_blue": {
+        "trials": 0,
+        "avg_views": 0,
+        "score": 0.5
+      },
+      "split_dark": {
+        "trials": 0,
+        "avg_views": 0,
+        "score": 0.5
+      },
+      "minimal_white": {
+        "trials": 0,
+        "avg_views": 0,
+        "score": 0.5
+      }
     },
     "hook_styles": {
-      "problem":  {"trials": 0, "avg_views": 0, "score": 0.5},
-      "number":   {"trials": 0, "avg_views": 0, "score": 0.5},
-      "result":   {"trials": 0, "avg_views": 0, "score": 0.5},
-      "reversal": {"trials": 0, "avg_views": 0, "score": 0.5},
-      "question": {"trials": 0, "avg_views": 0, "score": 0.5}
+      "problem": {
+        "trials": 0,
+        "avg_views": 0,
+        "score": 0.5
+      },
+      "number": {
+        "trials": 0,
+        "avg_views": 0,
+        "score": 0.5
+      },
+      "result": {
+        "trials": 0,
+        "avg_views": 0,
+        "score": 0.5
+      },
+      "reversal": {
+        "trials": 0,
+        "avg_views": 0,
+        "score": 0.5
+      },
+      "question": {
+        "trials": 0,
+        "avg_views": 0,
+        "score": 0.5
+      }
     }
   },
   "next_run": "tomorrow 09:00 JST"
