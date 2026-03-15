@@ -1,46 +1,8 @@
 {
-  "date": "2026-03-14",
-  "generated_at": "2026-03-14T02:01:34.774411+00:00",
-  "today_uploaded": [
-    {
-      "video_id": "UYksydzylow",
-      "title": "FIRE計算シミュレーションで絶対やってはいけない7つのこと",
-      "theme_id": "fire_calc",
-      "title_formula": "listicle",
-      "thumbnail_style": "bright_yellow",
-      "hook_style": "problem",
-      "upload_time": "2026-03-14T02:00:56.357413+00:00"
-    },
-    {
-      "video_id": "B7wsKIeM_rA",
-      "title": "知らないと損する！高配当株の選び方の7つのポイント",
-      "theme_id": "dividend_stock",
-      "title_formula": "listicle",
-      "thumbnail_style": "split_dark",
-      "hook_style": "problem",
-      "upload_time": "2026-03-14T02:01:34.769028+00:00"
-    }
-  ],
-  "checked_today": [
-    {
-      "video_id": "PcbpY8Zxrdk",
-      "title": "新NISAの始め方【30代が知るべき3ステップ】",
-      "views_48h": 1,
-      "status": "pivoted",
-      "title_formula": "unknown",
-      "thumbnail_style": "unknown",
-      "hook_style": "unknown"
-    },
-    {
-      "video_id": "9ttdVZI4zh4",
-      "title": "NISAで損する人の特徴5つ【知らないと後悔する】",
-      "views_48h": 0,
-      "status": "pivoted",
-      "title_formula": "unknown",
-      "thumbnail_style": "unknown",
-      "hook_style": "unknown"
-    }
-  ],
+  "date": "2026-03-15",
+  "generated_at": "2026-03-15T02:01:09.425318+00:00",
+  "today_uploaded": [],
+  "checked_today": [],
   "check_summary": {
     "checked": 0,
     "success": 0,
