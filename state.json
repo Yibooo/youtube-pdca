@@ -76,9 +76,9 @@
         "hook_text": "収入複線化についての常識、実は間違っているかもしれません。本当の答えをお伝えします。"
       },
       "title": "みんなが収入複線化で失敗する理由【正しいやり方教えます】",
-      "views_48h": null,
+      "views_48h": -1,
       "status": "pending_check",
-      "checked_at": null
+      "checked_at": "2026-03-16T02:00:05.468814+00:00"
     },
     {
       "video_id": "D4p02WPX7-o",
@@ -105,9 +105,9 @@
         "hook_text": "この動画を見ると、よくある失敗を避けたいできるようになります。NISAで損する人の特徴の全てを解説します。"
       },
       "title": "NISA失敗でよくある失敗を避けたいする人の特徴7選",
-      "views_48h": null,
+      "views_48h": -1,
       "status": "pending_check",
-      "checked_at": null
+      "checked_at": "2026-03-16T02:00:05.604770+00:00"
     },
     {
       "video_id": "UYksydzylow",
@@ -176,5 +176,5 @@
   ],
   "pivot_count": 2,
   "success_patterns": [],
-  "last_run": "2026-03-15T02:01:09.431189+00:00"
+  "last_run": "2026-03-16T02:01:03.831386+00:00"
 }

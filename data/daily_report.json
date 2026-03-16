@@ -1,8 +1,27 @@
 {
-  "date": "2026-03-15",
-  "generated_at": "2026-03-15T02:01:09.425318+00:00",
+  "date": "2026-03-16",
+  "generated_at": "2026-03-16T02:01:03.824362+00:00",
   "today_uploaded": [],
-  "checked_today": [],
+  "checked_today": [
+    {
+      "video_id": "_Hcqq6fCgig",
+      "title": "みんなが収入複線化で失敗する理由【正しいやり方教えます】",
+      "views_48h": -1,
+      "status": "pending_check",
+      "title_formula": "reversal",
+      "thumbnail_style": "dark_navy",
+      "hook_style": "reversal"
+    },
+    {
+      "video_id": "D4p02WPX7-o",
+      "title": "NISA失敗でよくある失敗を避けたいする人の特徴7選",
+      "views_48h": -1,
+      "status": "pending_check",
+      "title_formula": "listicle",
+      "thumbnail_style": "bright_red",
+      "hook_style": "result"
+    }
+  ],
   "check_summary": {
     "checked": 0,
     "success": 0,
@@ -13,7 +32,7 @@
     "success_count": 0,
     "pivot_count": 2,
     "pending_count": 4,
-    "overall_avg_views": 0.5
+    "overall_avg_views": -0.5
   },
   "performance_insights": {
     "best_title_formula": "未試行",
