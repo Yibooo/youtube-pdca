@@ -1,6 +1,6 @@
 {
-  "date": "2026-03-16",
-  "generated_at": "2026-03-16T02:01:03.824362+00:00",
+  "date": "2026-03-17",
+  "generated_at": "2026-03-17T02:01:11.121940+00:00",
   "today_uploaded": [],
   "checked_today": [
     {
@@ -20,6 +20,24 @@
       "title_formula": "listicle",
       "thumbnail_style": "bright_red",
       "hook_style": "result"
+    },
+    {
+      "video_id": "UYksydzylow",
+      "title": "FIRE計算シミュレーションで絶対やってはいけない7つのこと",
+      "views_48h": -1,
+      "status": "pending_check",
+      "title_formula": "listicle",
+      "thumbnail_style": "bright_yellow",
+      "hook_style": "problem"
+    },
+    {
+      "video_id": "B7wsKIeM_rA",
+      "title": "知らないと損する！高配当株の選び方の7つのポイント",
+      "views_48h": -1,
+      "status": "pending_check",
+      "title_formula": "listicle",
+      "thumbnail_style": "split_dark",
+      "hook_style": "problem"
     }
   ],
   "check_summary": {
@@ -32,7 +50,7 @@
     "success_count": 0,
     "pivot_count": 2,
     "pending_count": 4,
-    "overall_avg_views": -0.5
+    "overall_avg_views": -1.5
   },
   "performance_insights": {
     "best_title_formula": "未試行",
