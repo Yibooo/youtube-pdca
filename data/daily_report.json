@@ -1,8 +1,45 @@
 {
   "date": "2026-08-10",
-  "generated_at": "2026-08-09T23:39:10.730068+00:00",
+  "generated_at": "2026-08-10T00:39:10.086100+00:00",
   "today_uploaded": [],
-  "checked_today": [],
+  "checked_today": [
+    {
+      "video_id": "_Hcqq6fCgig",
+      "title": "みんなが収入複線化で失敗する理由【正しいやり方教えます】",
+      "views_48h": -1,
+      "status": "pending_check",
+      "title_formula": "reversal",
+      "thumbnail_style": "dark_navy",
+      "hook_style": "reversal"
+    },
+    {
+      "video_id": "D4p02WPX7-o",
+      "title": "NISA失敗でよくある失敗を避けたいする人の特徴7選",
+      "views_48h": -1,
+      "status": "pending_check",
+      "title_formula": "listicle",
+      "thumbnail_style": "bright_red",
+      "hook_style": "result"
+    },
+    {
+      "video_id": "UYksydzylow",
+      "title": "FIRE計算シミュレーションで絶対やってはいけない7つのこと",
+      "views_48h": -1,
+      "status": "pending_check",
+      "title_formula": "listicle",
+      "thumbnail_style": "bright_yellow",
+      "hook_style": "problem"
+    },
+    {
+      "video_id": "B7wsKIeM_rA",
+      "title": "知らないと損する！高配当株の選び方の7つのポイント",
+      "views_48h": -1,
+      "status": "pending_check",
+      "title_formula": "listicle",
+      "thumbnail_style": "split_dark",
+      "hook_style": "problem"
+    }
+  ],
   "check_summary": {
     "checked": 0,
     "success": 0,
