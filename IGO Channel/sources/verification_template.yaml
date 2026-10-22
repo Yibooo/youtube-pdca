@@ -1,0 +1,35 @@
+# 定石1本ごとの検証記録。sources/<joseki_id>.yaml としてコピーして使う。
+joseki_id: hoshi_kk_ikken_takabasami
+name_ja: 星・小ケイマかかり 一間高バサミ
+playlist: 1-A
+sgf: joseki/hoshi_kk_ikken_takabasami.sgf   # 基本形 + 変化を含むSGF（唯一の正）
+status: draft            # draft → reviewing → verified（verified のみ動画化）
+
+main_line: ""            # 基本形の手順（例: "B:Q16 W:R14 B:R11 W:R17 ..."）
+
+sources:                 # 3件以上・2カテゴリ以上・AI評価(D)必須
+  - category: B          # A=書籍/公式 B=Web定石DB C=プロ実戦 D=AI
+    name: OGS Joseki Explorer
+    ref: ""              # URL / 書名+ページ
+    matches_main_line: null   # true / false
+    note: ""
+  - category: C
+    name: Waltheri's Pattern Search
+    ref: ""
+    matches_main_line: null
+    note: ""
+  - category: D
+    name: KataGo
+    ref: ""              # モデル名・visits
+    matches_main_line: null
+    note: ""
+
+ai_check:                # KataGo 自動解析結果
+  model: ""
+  visits: 0
+  max_point_loss: null   # 基本形中の最大目数損失（1.5目超は要検討）
+
+variations_in_video: []  # 動画で扱う小さい変化（各々の根拠ソースを note に）
+common_mistakes: []      # 間違えやすい手（座標・なぜ悪いか・咎め方）
+reviewed_by: ""          # 人間レビュー者
+reviewed_at: ""
