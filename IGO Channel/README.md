@@ -9,6 +9,7 @@
 
 | ファイル | 内容 |
 |---|---|
+| [VIDEO_TEMPLATE.md](./VIDEO_TEMPLATE.md) | **動画テンプレート（問題→正解→不正解の手順と損失→まとめ）と台本・音声のルール** |
 | [STRATEGY.md](./STRATEGY.md) | 方針・ベンチマーク分析（柳澤理志チャンネル）・タイトル/サムネ規則・収益化戦略 |
 | [CONTENT_ROADMAP.md](./CONTENT_ROADMAP.md) | プレイリスト構成と動画リスト（星・小ケイマかかり → ダイレクト三々 → 一間かかり … → 小目） |
 | [ACTION_PLAN.md](./ACTION_PLAN.md) | フェーズ別アクションプランとKPI |

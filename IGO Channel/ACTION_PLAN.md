@@ -5,7 +5,7 @@
 - [x] アップロード先チャンネルを決定：@FIRE-channel-yb を転用（2026-10-22）
 - [ ] YouTube Studio でチャンネル名・説明・アイコン・ハンドルを囲碁向けに変更（本人が操作）
 - [x] 旧「マネー研究所」の launchd 自動投稿を停止（2026-10-22。plist は `~/Library/LaunchAgents/com.youtube-pdca.plist.disabled` に退避）
-- [ ] KataGo + KaTrain をローカルにインストール、解析が回ることを確認（`brew install katago` は libzip のダウンロード失敗で未完了）
+- [x] KataGo を導入（2026-10-22。brew 版は macOS 14 の Swift で Metal ビルドが失敗するため、CPU/Eigen 版をソースからビルド。`quick_exit` を `_Exit` に置換する必要あり）。`scripts/katago_eval.py` で目数損失を計測
 - [x] 定石書の代わりに日本語Webソース（GJ / IB / PN）を選定 → [sources/SOURCES.md](./sources/SOURCES.md)
 - [x] Playlist 1 の定石を整理・照合 → [joseki/PLAYLIST1_hoshi_kogeima_kakari.md](./joseki/PLAYLIST1_hoshi_kogeima_kakari.md)（レビュー待ち）
 
