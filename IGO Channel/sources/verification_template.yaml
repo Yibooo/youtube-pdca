@@ -8,7 +8,7 @@ status: draft            # draft → reviewing → verified（verified のみ動
 main_line: ""            # 基本形の手順（例: "B:Q16 W:R14 B:R11 W:R17 ..."）
 
 sources:                 # 3件以上・2カテゴリ以上・AI評価(D)必須
-  - category: B          # A=書籍/公式 B=Web定石DB C=プロ実戦 D=AI
+  - category: B          # A=日本語定石サイト(書籍) B=海外Web定石DB C=プロ実戦 D=AI
     name: OGS Joseki Explorer
     ref: ""              # URL / 書名+ページ
     matches_main_line: null   # true / false

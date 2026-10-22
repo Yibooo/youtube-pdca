@@ -1,0 +1,396 @@
+{
+ "R12,R17": {
+  "line": [
+   "R12",
+   "R17",
+   "R16",
+   "Q17",
+   "P16",
+   "O18",
+   "pass",
+   "N17"
+  ],
+  "mistakes": [
+   {
+    "after": "R12 R17 R16 Q17",
+    "move": "S17",
+    "cat": "MISTAKE"
+   }
+  ],
+  "end_src": null
+ },
+ "Q12,R17": {
+  "line": [
+   "Q12",
+   "R17",
+   "R16",
+   "Q17",
+   "P16",
+   "S16",
+   "S15",
+   "S17",
+   "R15",
+   "O17",
+   "N15"
+  ],
+  "mistakes": [],
+  "end_src": null
+ },
+ "R11,R17": {
+  "line": [
+   "R11",
+   "R17",
+   "R16",
+   "Q17",
+   "P16",
+   "S16",
+   "S15",
+   "S17",
+   "R15",
+   "O17",
+   "M17",
+   "N17",
+   "M16"
+  ],
+  "mistakes": [
+   {
+    "after": "R11 R17",
+    "move": "Q17",
+    "cat": "MISTAKE"
+   }
+  ],
+  "end_src": null
+ },
+ "Q11,R17": {
+  "line": [
+   "Q11",
+   "R17",
+   "R16",
+   "Q17",
+   "P16",
+   "O18"
+  ],
+  "mistakes": [],
+  "end_src": null
+ },
+ "R10,R17": {
+  "line": [
+   "R10",
+   "R17",
+   "R16",
+   "Q17",
+   "P16",
+   "S16",
+   "S15",
+   "S17",
+   "S14",
+   "O17",
+   "R13"
+  ],
+  "mistakes": [],
+  "end_src": "Post AlphaGo Pro Games"
+ },
+ "Q10,R17": {
+  "line": [
+   "Q10",
+   "R17",
+   "R16",
+   "Q17",
+   "P16",
+   "S16",
+   "S15",
+   "S17",
+   "S14",
+   "O17",
+   "R13"
+  ],
+  "mistakes": [],
+  "end_src": "Traditional"
+ },
+ "Q14,Q13": {
+  "line": [
+   "Q14",
+   "Q13",
+   "R15",
+   "P14",
+   "Q15",
+   "P13",
+   "O16",
+   "S14"
+  ],
+  "mistakes": [
+   {
+    "after": "Q14 Q13",
+    "move": "P13",
+    "cat": "TRICK"
+   }
+  ],
+  "end_src": null
+ },
+ "Q14,R15": {
+  "line": [
+   "Q14",
+   "R15",
+   "Q15",
+   "R16",
+   "Q17",
+   "Q13",
+   "R17"
+  ],
+  "mistakes": [
+   {
+    "after": "Q14 R15",
+    "move": "R16",
+    "cat": "MISTAKE"
+   }
+  ],
+  "end_src": "Post AlphaGo Pro Games"
+ },
+ "R15": {
+  "line": [
+   "R15",
+   "Q14",
+   "O16",
+   "R10",
+   "R12",
+   "Q12",
+   "S12"
+  ],
+  "mistakes": [
+   {
+    "after": "R15",
+    "move": "P14",
+    "cat": "MISTAKE"
+   },
+   {
+    "after": "R15",
+    "move": "pass",
+    "cat": "MISTAKE"
+   },
+   {
+    "after": "R15",
+    "move": "S15",
+    "cat": "MISTAKE"
+   }
+  ],
+  "end_src": null
+ },
+ "O17": {
+  "line": [
+   "O17",
+   "R16",
+   "R17",
+   "S17",
+   "R18",
+   "Q15",
+   "S16",
+   "R15",
+   "S18",
+   "Q10"
+  ],
+  "mistakes": [
+   {
+    "after": "O17",
+    "move": "N17",
+    "cat": "TRICK"
+   },
+   {
+    "after": "O17",
+    "move": "S17",
+    "cat": "TRICK"
+   },
+   {
+    "after": "O17 R16",
+    "move": "Q17",
+    "cat": "MISTAKE"
+   },
+   {
+    "after": "O17 R16 R17 S17",
+    "move": "S16",
+    "cat": "MISTAKE"
+   }
+  ],
+  "end_src": "Yeonwoo Cho"
+ },
+ "O17,R17": {
+  "line": [
+   "O17",
+   "R17",
+   "R16",
+   "S16",
+   "Q17",
+   "S18",
+   "R18",
+   "S17"
+  ],
+  "mistakes": [],
+  "end_src": "Traditional"
+ },
+ "O17,S16": {
+  "line": [
+   "O17",
+   "S16",
+   "R13",
+   "Q13",
+   "R12",
+   "Q12",
+   "S14",
+   "R15",
+   "R10",
+   "Q11",
+   "R9",
+   "R17",
+   "L17"
+  ],
+  "mistakes": [
+   {
+    "after": "O17 S16",
+    "move": "S12",
+    "cat": "TRICK"
+   }
+  ],
+  "end_src": "Traditional"
+ },
+ "O16": {
+  "line": [
+   "O16",
+   "P15",
+   "O15",
+   "R17",
+   "R16",
+   "P16",
+   "P17",
+   "Q17",
+   "S17",
+   "S18",
+   "S16",
+   "P18",
+   "O17",
+   "P14",
+   "O18",
+   "R18"
+  ],
+  "mistakes": [
+   {
+    "after": "O16",
+    "move": "S17",
+    "cat": "TRICK"
+   }
+  ],
+  "end_src": null
+ },
+ "O16,R17": {
+  "line": [
+   "O16",
+   "R17",
+   "R16",
+   "S16",
+   "Q17",
+   "S18",
+   "R18",
+   "S17"
+  ],
+  "mistakes": [],
+  "end_src": "Hideo Otake—Opening Theory Made Easy"
+ },
+ "O16,S16": {
+  "line": [
+   "O16",
+   "S16",
+   "R12",
+   "R17",
+   "Q14"
+  ],
+  "mistakes": [
+   {
+    "after": "O16 S16",
+    "move": "S12",
+    "cat": "TRICK"
+   }
+  ],
+  "end_src": null
+ },
+ "N17,R17": {
+  "line": [
+   "N17",
+   "R17",
+   "R16",
+   "Q17",
+   "P16",
+   "P17",
+   "O17",
+   "S16",
+   "S15",
+   "S17",
+   "R15"
+  ],
+  "mistakes": [],
+  "end_src": "Traditional"
+ },
+ "P15": {
+  "line": [
+   "P15",
+   "Q12"
+  ],
+  "mistakes": [],
+  "end_src": null
+ },
+ "pass,R17": {
+  "line": [
+   "pass",
+   "R17",
+   "Q17",
+   "R16",
+   "Q15"
+  ],
+  "mistakes": [],
+  "end_src": "Post AlphaGo Pro Games"
+ },
+ "pass,O17": {
+  "line": [
+   "pass",
+   "O17",
+   "Q14",
+   "Q13",
+   "P14",
+   "P13",
+   "R15",
+   "R13",
+   "O14",
+   "R17",
+   "Q17",
+   "Q18",
+   "M17",
+   "S18",
+   "S16"
+  ],
+  "mistakes": [
+   {
+    "after": "pass O17",
+    "move": "R15",
+    "cat": "MISTAKE"
+   }
+  ],
+  "end_src": null
+ },
+ "pass,O16": {
+  "line": [
+   "pass",
+   "O16",
+   "O15",
+   "N15",
+   "O14",
+   "N14",
+   "O13",
+   "N17"
+  ],
+  "mistakes": [
+   {
+    "after": "pass O16 O15",
+    "move": "P16",
+    "cat": "MISTAKE"
+   }
+  ],
+  "end_src": null
+ }
+}

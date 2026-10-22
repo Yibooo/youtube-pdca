@@ -2,10 +2,12 @@
 
 ## Phase 0: 準備（1週目）
 
-- [ ] 囲碁用YouTubeチャンネル（ブランドアカウント）を作成し、OAuth認証をやり直して `token.json` を発行
-- [ ] 旧「マネー研究所」の launchd 自動投稿を停止するか判断（`2026_March/` 移動でパスが変わるため、そのままだと動かない）
-- [ ] KataGo + KaTrain をローカルにインストール、解析が回ることを確認
-- [ ] 定石書を1〜2冊用意（カテゴリAのソース）
+- [x] アップロード先チャンネルを決定：@FIRE-channel-yb を転用（2026-10-22）
+- [ ] YouTube Studio でチャンネル名・説明・アイコン・ハンドルを囲碁向けに変更（本人が操作）
+- [x] 旧「マネー研究所」の launchd 自動投稿を停止（2026-10-22。plist は `~/Library/LaunchAgents/com.youtube-pdca.plist.disabled` に退避）
+- [ ] KataGo + KaTrain をローカルにインストール、解析が回ることを確認（`brew install katago` は libzip のダウンロード失敗で未完了）
+- [x] 定石書の代わりに日本語Webソース（GJ / IB / PN）を選定 → [sources/SOURCES.md](./sources/SOURCES.md)
+- [x] Playlist 1 の定石を整理・照合 → [joseki/PLAYLIST1_hoshi_kogeima_kakari.md](./joseki/PLAYLIST1_hoshi_kogeima_kakari.md)（レビュー待ち）
 
 ## Phase 1: パイプライン構築（2〜3週目）
 

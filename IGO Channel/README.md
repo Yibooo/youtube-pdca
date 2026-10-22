@@ -12,6 +12,7 @@
 | [STRATEGY.md](./STRATEGY.md) | 方針・ベンチマーク分析（柳澤理志チャンネル）・タイトル/サムネ規則・収益化戦略 |
 | [CONTENT_ROADMAP.md](./CONTENT_ROADMAP.md) | プレイリスト構成と動画リスト（星・小ケイマかかり → ダイレクト三々 → 一間かかり … → 小目） |
 | [ACTION_PLAN.md](./ACTION_PLAN.md) | フェーズ別アクションプランとKPI |
+| [joseki/PLAYLIST1_hoshi_kogeima_kakari.md](./joseki/PLAYLIST1_hoshi_kogeima_kakari.md) | **Playlist 1 の定石整理・検証表（レビュー待ち）** |
 | [sources/SOURCES.md](./sources/SOURCES.md) | 信頼できる定石ソース一覧と「3ソース検証ルール」 |
 | [sources/verification_template.yaml](./sources/verification_template.yaml) | 定石1本ごとの検証記録テンプレート |
 

@@ -1,0 +1,255 @@
+{
+ "/hoshi/kogeimagakari/": {
+  "title": "星への小ゲイマガカリ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc])",
+   "(;SZ[19];B[pd];W[nc];B[pf])",
+   "(;SZ[19];B[pd];W[nc];B[qf])",
+   "(;SZ[19];B[pd];W[nc];B[qg])",
+   "(;SZ[19];B[pd];W[nc];B[nd])",
+   "(;SZ[19];B[pd];W[nc];B[ne])",
+   "(;SZ[19];B[pd];W[nc];B[oe])",
+   "(;SZ[19];B[pd];W[nc];B[oc])",
+   "(;SZ[19];B[pd];W[nc];B[ob])",
+   "(;SZ[19];B[pd];W[nc];B[pc])",
+   "(;SZ[19];B[pd];W[nc];B[lc])",
+   "(;SZ[19];B[pd];W[nc];B[ld])",
+   "(;SZ[19];B[pd];W[nc];B[kc])",
+   "(;SZ[19];B[pd];W[nc];B[kd])",
+   "(;SZ[19];B[pd];W[nc];B[jc])",
+   "(;SZ[19];B[pd];W[nc];B[jd])",
+   "(;SZ[19];B[pd];W[nc];W[qf])"
+  ]
+ },
+ "/hoshi/kogeimagakari/boushi/": {
+  "title": "星への小ゲイマガカリにボウシ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[ne])"
+  ]
+ },
+ "/hoshi/kogeimagakari/burasagari/": {
+  "title": "星への小ゲイマガカリにブラサガリ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[pc])"
+  ]
+ },
+ "/hoshi/kogeimagakari/ikkenbasami/": {
+  "title": "星への小ゲイマガカリに一間バサミ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[lc])",
+   "(;SZ[19];B[pd];W[nc];B[lc];W[qc])",
+   "(;SZ[19];B[pd];W[nc];B[lc];W[qf])",
+   "(;SZ[19];B[pd];W[nc];B[lc];W[ne])",
+   "(;SZ[19];B[pd];W[nc];B[lc];W[ld])"
+  ]
+ },
+ "/hoshi/kogeimagakari/ikkentakabasami/": {
+  "title": "星への小ゲイマガカリに一間高バサミ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[ld])",
+   "(;SZ[19];B[pd];W[nc];B[ld];W[qc])",
+   "(;SZ[19];B[pd];W[nc];B[ld];W[ne])"
+  ]
+ },
+ "/hoshi/kogeimagakari/ikkentobi/": {
+  "title": "星への小ゲイマガカリに一間トビで受ける",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[pf])",
+   "(;SZ[19];B[pd];W[nc];B[pf];W[pb])",
+   "(;SZ[19];B[pd];W[nc];B[pf];W[pc])",
+   "(;SZ[19];B[pd];W[nc];B[pf];W[qc])",
+   "(;SZ[19];B[pd];W[nc];B[pf];W[qh])",
+   "(;SZ[19];B[pd];W[nc];B[pf];W[jc])",
+   "(;SZ[19];B[pd];W[nc];B[pf];W[kc])"
+  ]
+ },
+ "/hoshi/kogeimagakari/kogeima/": {
+  "title": "星への小ゲイマガカリに小ゲイマで受ける",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[qf])",
+   "(;SZ[19];B[pd];W[nc];B[qf];W[pb])",
+   "(;SZ[19];B[pd];W[nc];B[qf];W[pc])",
+   "(;SZ[19];B[pd];W[nc];B[qf];W[qc])",
+   "(;SZ[19];B[pd];W[nc];B[qf];W[jc])",
+   "(;SZ[19];B[pd];W[nc];B[qf];W[kc])"
+  ]
+ },
+ "/hoshi/kogeimagakari/kosumi/": {
+  "title": "星への小ゲイマガカリにコスミ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[oe])"
+  ]
+ },
+ "/hoshi/kogeimagakari/kosumitsuke/": {
+  "title": "星への小ゲイマガカリにコスミツケ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[oc])"
+  ]
+ },
+ "/hoshi/kogeimagakari/nikenbasami/": {
+  "title": "星への小ゲイマガカリに二間バサミ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[kc])",
+   "(;SZ[19];B[pd];W[nc];B[kc];W[qc])",
+   "(;SZ[19];B[pd];W[nc];B[kc];W[qf])"
+  ]
+ },
+ "/hoshi/kogeimagakari/nikentakabasami/": {
+  "title": "星への小ゲイマガカリに二間高バサミ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[kd])",
+   "(;SZ[19];B[pd];W[nc];B[kd];W[qc])",
+   "(;SZ[19];B[pd];W[nc];B[kd];W[qf])",
+   "(;SZ[19];B[pd];W[nc];B[kd];W[ne])",
+   "(;SZ[19];B[pd];W[nc];B[kd];W[le])"
+  ]
+ },
+ "/hoshi/kogeimagakari/ohgeima/": {
+  "title": "星への小ゲイマガカリに大ゲイマで受ける",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[qg])",
+   "(;SZ[19];B[pd];W[nc];B[qg];W[qc])",
+   "(;SZ[19];B[pd];W[nc];B[qg];W[pc])",
+   "(;SZ[19];B[pd];W[nc];B[qg];W[qi])"
+  ]
+ },
+ "/hoshi/kogeimagakari/ryogakari/": {
+  "title": "星への小ゲイマガカリに手抜きへの両ガカリ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];W[qf])"
+  ]
+ },
+ "/hoshi/kogeimagakari/sangenbasami/": {
+  "title": "星への小ゲイマガカリに三間バサミ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[jc])",
+   "(;SZ[19];B[pd];W[nc];B[jc];W[qc])",
+   "(;SZ[19];B[pd];W[nc];B[jc];W[pc])",
+   "(;SZ[19];B[pd];W[nc];B[jc];W[qf])"
+  ]
+ },
+ "/hoshi/kogeimagakari/sangentakabasami/": {
+  "title": "星への小ゲイマガカリに三間高バサミ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[jd])",
+   "(;SZ[19];B[pd];W[nc];B[jd];W[qc])",
+   "(;SZ[19];B[pd];W[nc];B[jd];W[pc])",
+   "(;SZ[19];B[pd];W[nc];B[jd];W[qf])",
+   "(;SZ[19];B[pd];W[nc];B[jd];W[pf])"
+  ]
+ },
+ "/hoshi/kogeimagakari/shitakeima/": {
+  "title": "星への小ゲイマガカリに下ケイマ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[ob])"
+  ]
+ },
+ "/hoshi/kogeimagakari/ikkentobi/kakari/": {
+  "title": "星への小ゲイマガカリに一間トビに対してカカリ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[pf];W[qh])",
+   "(;SZ[19];B[pd];W[nc];B[pf];W[qh];B[og](;B[pi])(;B[kc]))",
+   "(;SZ[19];B[pd];W[nc];B[pf];W[qh];B[qk])"
+  ]
+ },
+ "/hoshi/kogeimagakari/ikkentobi/nikenbiraki/": {
+  "title": "星への小ゲイマガカリに一間トビに対して二間ビラキ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[pf];W[kc])"
+  ]
+ },
+ "/hoshi/kogeimagakari/ikkentobi/sangenbiraki/": {
+  "title": "星への小ゲイマガカリに一間トビに対して三間ビラキ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[pf];W[jc])"
+  ]
+ },
+ "/hoshi/kogeimagakari/ikkentobi/sansan/": {
+  "title": "星への小ゲイマガカリに一間トビに対して三々入り",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[pf];W[qc])"
+  ]
+ },
+ "/hoshi/kogeimagakari/ikkentobi/suberi/": {
+  "title": "星への小ゲイマガカリに一間トビに対してスベリ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[pf];W[pb])",
+   "(;SZ[19];B[pd];W[nc];B[pf];W[pb];B[qc];W[kc](;B[qi])(;B[qj]))",
+   "(;SZ[19];B[pd];W[nc];B[pf];W[pb];B[qc];B[lc];W[ne];B[le];W[ng];B[ph])",
+   "(;SZ[19];B[pd];W[nc];B[pf];W[pb];B[qc];W[ld])",
+   "(;SZ[19];B[pd];W[nc];B[pf];W[pb];B[qc];W[jc];B[lc])",
+   "(;SZ[19];B[pd];W[nc];B[pf];W[pb];B[lc])"
+  ]
+ },
+ "/hoshi/kogeimagakari/ikkentobi/tsuke/": {
+  "title": "星への小ゲイマガカリに一間トビに対してツケ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[pf];W[pc])"
+  ]
+ },
+ "/hoshi/kogeimagakari/kogeima/sangenbiraki/": {
+  "title": "星への小ゲイマガカリに小ゲイマ受けに対して三間ビラキ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[qf];W[jc])"
+  ]
+ },
+ "/hoshi/kogeimagakari/kogeima/sansan/": {
+  "title": "星への小ゲイマガカリに小ゲイマ受けに対して三々入り",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[qf];W[qc])"
+  ]
+ },
+ "/hoshi/kogeimagakari/kogeima/suberi/": {
+  "title": "星への小ゲイマガカリに小ゲイマ受けに対してスベリ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[qf];W[pb])",
+   "(;SZ[19];B[pd];W[nc];B[qf];W[pb];B[qc])",
+   "(;SZ[19];B[pd];W[nc];B[qf];W[pb];B[mc])"
+  ]
+ },
+ "/hoshi/kogeimagakari/kogeima/tsuke/": {
+  "title": "星への小ゲイマガカリに小ゲイマ受けに対してツケ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[qf];W[pc])"
+  ]
+ },
+ "/hoshi/kogeimagakari/ohgeima/sansan/": {
+  "title": "星への小ゲイマガカリに大ゲイマ受けに対する三々入り",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[qg];W[qc])"
+  ]
+ },
+ "/hoshi/kogeimagakari/ohgeima/tsuke/": {
+  "title": "星への小ゲイマガカリに大ゲイマ受けに対するツケ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[qg];W[pc])"
+  ]
+ },
+ "/hoshi/kogeimagakari/ohgeima/tsume/": {
+  "title": "星への小ゲイマガカリに大ゲイマ受けに対するツメ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[qg];W[qi])"
+  ]
+ },
+ "/hoshi/kogeimagakari/sangentakabasami/ikkentakaryogakari/": {
+  "title": "星への小ゲイマガカリに三間高バサミへの一間高両ガカリ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[jd];W[pf])"
+  ]
+ },
+ "/hoshi/kogeimagakari/sangentakabasami/ryogakari/": {
+  "title": "星への小ゲイマガカリに三間高バサミへの両ガカリ",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[jd];W[qf])"
+  ]
+ },
+ "/hoshi/kogeimagakari/sangentakabasami/sansaniri/": {
+  "title": "星への小ゲイマガカリに三間高バサミへの三々入り",
+  "sgf": [
+   "(;SZ[19];B[pd];W[nc];B[jd];W[qc])",
+   "(;SZ[19];B[pd];W[nc];B[jd];W[qc];B[pc];W[qd];B[pe];W[pb];B[ob];W[qb];B[oc];W[qf];B[nd])",
+   "(;SZ[19];B[pd];W[nc];B[jd];W[qc];B[pc];W[qd];B[pe];W[pb];B[ob];W[qb];B[oc];W[qf](;B[og];W[qg])(;B[pg];W[qg];B[ph]))",
+   "(;SZ[19];B[pd];W[nc];B[jd];W[qc];B[qd];W[pc];B[od];W[mc])"
+  ]
+ }
+}

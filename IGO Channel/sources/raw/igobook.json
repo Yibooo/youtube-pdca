@@ -1,0 +1,798 @@
+{
+ "tsukenobi": [],
+ "kosumitsuke": [
+  {
+   "setup": [
+    "B:Q16",
+    "B:Q10"
+   ],
+   "seq": "W:R14 B:R15 W:Q14 B:O16 W:Q12 B:R10"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:Q10"
+   ],
+   "seq": "W:R14 B:R15 W:Q14 B:O16 W:R12 B:R10"
+  }
+ ],
+ "kogeimauke_basic": [],
+ "tsukeosae": [
+  {
+   "setup": [
+    "B:Q16",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:R15 W:P14 B:Q15 W:P13 B:R13 W:R12 B:S14 W:S13 B:O16"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:R15 W:P14 B:Q15 W:R13 B:O16"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:R15 W:P14 B:Q15 W:R13 B:P13 W:O14 B:P12 W:R10 B:O16"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:R15 W:P14 B:Q15 W:S14 B:P13 W:Q12 B:O14 W:P12 B:O13 W:S15 B:R17"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:Q14",
+    "B:R15",
+    "B:Q15",
+    "B:R13",
+    "W:R14",
+    "W:Q13",
+    "W:P14",
+    "W:P13"
+   ],
+   "seq": "W:R12 B:S14 W:S13 B:O16"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:Q14",
+    "B:R15",
+    "B:Q15",
+    "W:R14",
+    "W:Q13",
+    "W:P14",
+    "W:R13"
+   ],
+   "seq": "B:O16 W:Q9"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:Q14",
+    "B:R15",
+    "B:Q15",
+    "W:R14",
+    "W:Q13",
+    "W:P14",
+    "W:S14"
+   ],
+   "seq": "B:P13 W:Q12 B:O14 W:P12 B:O13 W:S15 B:R17"
+  }
+ ],
+ "hasami_sansan": [
+  {
+   "setup": [
+    "B:Q16",
+    "B:M17",
+    "W:O17"
+   ],
+   "seq": "W:R17 B:Q17 W:R16 B:Q15 W:Q18 B:P18 W:R18 B:P17 W:R14"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:R12",
+    "W:R14"
+   ],
+   "seq": "W:R17 B:R16 W:Q17 B:P17 W:S17 B:S16 W:P16 B:P15 W:O16 B:O17 W:Q15 B:S14 W:S15"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:M17",
+    "W:O17"
+   ],
+   "seq": "W:R17 B:Q17 W:R16 B:R15 W:R18 B:Q18 W:Q15 B:P15 W:Q14 B:O16 W:R14"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:R12",
+    "W:R14"
+   ],
+   "seq": "W:R17 B:Q17 W:R16 B:Q15 W:S14 B:P13"
+  }
+ ],
+ "hasami_kaeshi": [],
+ "ikkentakabasami": [
+  {
+   "setup": [
+    "B:Q16",
+    "W:O17"
+   ],
+   "seq": "B:M16 W:R17 B:Q17 W:R16 B:Q15 W:Q18 B:P18 W:R18 B:P17 W:R14"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "W:R14"
+   ],
+   "seq": "B:Q12 W:R17 B:K16 B:Q17 W:R16 B:Q15 W:R15 B:Q14 W:R13 B:Q13"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "W:R14"
+   ],
+   "seq": "B:Q12 W:R17 B:K16 B:Q17 W:R16 B:Q15 W:R15 B:Q14 W:Q13 B:R13 W:P13 B:R12 W:Q18 B:P18 W:R18 B:O17"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "W:R14"
+   ],
+   "seq": "B:Q12 W:P14 B:O16 W:S16 B:R17 W:S12 B:P13 W:Q14 B:O14 W:O13 B:N14 W:O12 B:K16"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "W:R14"
+   ],
+   "seq": "B:Q12 W:P14 B:O16 W:S16 B:R17 W:S12 B:P13 W:O14 B:R13 W:S13 B:Q14 W:Q15 B:R15"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:M16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:R17 B:R16 W:Q17 B:P17 W:P18 B:P16 W:O18 B:Q11"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:M16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:P16 B:P17 W:P15 B:Q17 W:N16 B:O15 W:N15 B:O14 W:N17 B:Q14"
+  }
+ ],
+ "ikken_uke": [],
+ "kogeima_uke": [],
+ "kogeima_uke_sansan": [
+  {
+   "setup": [
+    "B:Q16",
+    "B:O17",
+    "B:R16",
+    "B:S15",
+    "B:R15",
+    "B:O18",
+    "B:P16",
+    "B:N15",
+    "W:R14",
+    "W:R17",
+    "W:S16",
+    "W:S17",
+    "W:P18",
+    "W:P17",
+    "W:Q17"
+   ],
+   "seq": ""
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:M17",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:R17 B:Q17 W:R16 B:Q15 W:R15"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:M17",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:R17 B:R16 W:Q17 B:P16 W:O18 B:S16 W:S17 B:R12"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:M17",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:R17 B:R16 W:Q17 B:P16 W:N17 B:N16 W:O18 B:L16 W:Q10"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:M17",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:N16 B:N17 W:R17 B:P17 W:R16"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:M17",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:P14 W:R16 B:R15 W:S15 B:Q15 W:S13 B:R17 W:S16"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:M17",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:P14 W:R17 B:R15 W:Q17 B:R13"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:O17",
+    "B:R16",
+    "W:R14",
+    "W:R17",
+    "W:S16"
+   ],
+   "seq": "B:Q17 W:S18 B:R18 W:S17"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:O17",
+    "B:R16",
+    "W:R14",
+    "W:R17",
+    "W:S16"
+   ],
+   "seq": "B:S15 W:S17 B:R15 W:P18 B:O18 W:P17 B:P16 W:Q17 B:N15"
+  }
+ ],
+ "nikentakabasami": [
+  {
+   "setup": [
+    "B:Q16",
+    "B:Q11",
+    "W:R14"
+   ],
+   "seq": ""
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R17"
+   ],
+   "seq": "B:Q17 W:R16 B:Q15 W:Q18 B:P18 W:R18 B:P17 W:R14"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:Q11",
+    "W:R14",
+    "W:R17"
+   ],
+   "seq": "B:Q17 W:R16 B:Q15 W:R15 B:Q14 W:Q13 B:P13 W:P12 B:Q12 W:R13 B:O13"
+  }
+ ],
+ "ryogakari": [
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:P14 W:R17 B:R15 W:Q17 B:R13"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:R15 W:P14 B:Q15 W:O15 B:R13 W:Q12 B:S14"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:N16 B:O15 W:R17 B:P17 W:R16 B:O18"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:M17",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:R17 B:Q17 W:R16 B:Q15 W:R15"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:M17",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:R17 B:R16 W:Q17 B:P16 W:O18 B:S16 W:S17 B:R12"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:M17",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:R17 B:R16 W:Q17 B:P16 W:N17 B:N16 W:O18 B:L16 W:Q10"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:M17",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:N16 B:N17 W:R17 B:P17 W:R16"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:M17",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:P14 W:R16 B:R15 W:S15 B:Q15 W:S13 B:R17 W:S16"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:M17",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:P14 W:R17 B:R15 W:Q17 B:R13"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:R12",
+    "W:R14",
+    "W:O16"
+   ],
+   "seq": "B:Q14 W:Q13 B:R13 W:Q17 B:R15 W:R17"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:R12",
+    "W:R14",
+    "W:O16"
+   ],
+   "seq": "B:Q14 W:Q17 B:R17 W:Q13 B:P14 W:R13 B:R15"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:M16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:R17 B:R16 W:Q17 B:P17 W:P18 B:P16 W:O18"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:P14 W:R17 B:R15 W:Q17 B:R13"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:R15 W:P14 B:Q15 W:O15 B:R13 W:Q12 B:S14"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:N16 B:O15 W:R17 B:P17 W:R16 B:O18"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:Q11",
+    "W:R14",
+    "W:O16"
+   ],
+   "seq": "B:Q14 W:Q13 B:P14 W:R15 B:P16 W:S17 B:P13"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:Q11",
+    "W:R14",
+    "W:O16"
+   ],
+   "seq": "B:Q14 W:R17 B:Q17 W:Q13 B:Q15"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:Q11",
+    "W:R14",
+    "W:O16"
+   ],
+   "seq": "B:Q14 W:R17 B:R15 W:Q17 B:R13"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:Q11",
+    "W:R14",
+    "W:O16"
+   ],
+   "seq": "B:O15 W:N15 B:P15 W:R17 B:N16 W:R16 B:M16"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:P14 W:R17 B:R15 W:Q17 B:R13"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:P14 W:R17 B:R15 W:R13 B:Q17 W:S18 B:Q18 W:S15 B:R16 W:S16"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:P14 W:R17 B:R15 W:R13 B:Q17 W:S18 B:S14 W:Q18 B:S13 W:R11 B:Q11 W:Q10 B:R12 W:Q12 B:P11 W:S12 B:P13"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:P14 W:R17 B:R15 W:R13 B:Q17 W:Q18 B:S18 W:R18 B:S17"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:P14 W:R17 B:R15 W:R13 B:Q17 W:Q18 B:P18 W:R18 B:P17 W:S15"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:P14 W:R15 B:R16 W:N16 B:P17 W:N14 B:O16 W:O18 B:P18 W:R10"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:R15 W:P14 B:Q15 W:O15 B:R13 W:Q12 B:S14"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:R15 W:P14 B:Q15 W:O15 B:P13 W:Q12 B:O13"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:N16 B:O15 W:R17 B:P17 W:R16 B:O18"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:N16 B:O15 W:P17 B:Q17 W:N15 B:Q14 W:Q13 B:N14 W:Q15 B:P16 W:M17 B:P14 W:M14 B:N13 W:R11"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:N16 B:O15 W:P17 B:Q17 W:N15 B:Q14 W:Q13 B:R15 W:P14 B:Q15 W:N14 B:R13 W:Q12 B:S14"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:N16 B:O15 W:P17 B:Q17 W:N15 B:R15 W:Q14 B:P16 W:N14 B:N17 W:M17 B:N18 W:M18 B:P18 W:N19 B:O18 W:O14"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:N16 B:O15 W:P17 B:Q17 W:P16 B:Q15 W:P15 B:Q14 W:P14 B:Q13"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:N16 B:O15 W:Q17 B:P17 W:P18 B:P16 W:N18 B:R17 W:Q18 B:N15"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:R17 B:P17 W:R16 B:N17"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:R17 B:R16 W:Q17 B:P17 W:P18 B:P16 W:O18 B:R11 W:S16 B:S15 W:S17 B:R15"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:R17 B:R16 W:Q17 B:P17 W:P18 B:P16 W:O18 B:R11 W:N16 B:N15 W:M15 B:M16 W:N17 B:N14 W:M14 B:M13"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:L16",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:R17 B:R16 W:Q17 B:P17 W:P18 B:P16 W:O18 B:S16 W:R10 B:S18 W:M16 B:M15 W:M17 B:L17 W:L18 B:K18 W:M18 B:L15"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:Q11",
+    "W:R14",
+    "W:O16"
+   ],
+   "seq": "B:Q14 W:Q13 B:P14 W:R15 B:P16 W:S17 B:P13"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:Q11",
+    "W:R14",
+    "W:O16"
+   ],
+   "seq": "B:Q14 W:R17 B:R15 W:Q17 B:R13"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:Q11",
+    "W:R14",
+    "W:O16"
+   ],
+   "seq": "B:Q14 W:R17 B:Q17 W:Q13 B:Q15 W:Q12 B:P11 W:O13 B:S16"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:Q11",
+    "W:R14",
+    "W:O16"
+   ],
+   "seq": "B:Q14 W:R17 B:Q17 W:Q13 B:P14 W:R16"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:Q11",
+    "W:R14",
+    "W:O16"
+   ],
+   "seq": "B:Q14 W:R17 B:Q17 W:Q13 B:R15 W:P14 B:Q15"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:Q11",
+    "W:R14",
+    "W:O16"
+   ],
+   "seq": "B:O15 W:N15 B:P15 W:R17 B:N16 W:R16 B:M16"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:K17",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:O16 W:N16 B:O15 W:Q17 B:P17 W:P18 B:P16 W:N18 B:R17 W:Q18 B:N15"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:K17",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:P14 W:R15 B:R16 W:N16 B:P17 W:P18 B:O16 W:O18 B:Q18 W:N14 B:O13 W:R11 B:S15"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:K17",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:P14 W:R15 B:R16 W:L16 B:K16 W:L15 B:L17 W:M17 B:P17"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:K17",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:P14 W:R17 B:R15 W:Q17 B:R13"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:K17",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:P14 W:R17 B:R15 W:R13 B:Q17 W:Q18 B:S18 W:R18 B:S17 W:M17"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:K17",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:P14 W:R17 B:R15 W:R13 B:Q17 W:Q18 B:S14 W:S18 B:S13 W:R11 B:Q11 W:Q10 B:R12 W:Q12 B:P11 W:S12 B:P13"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:K17",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:R15 W:P14 B:Q15 W:O15 B:R13 W:Q12 B:S14"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:K17",
+    "W:O17",
+    "W:R14"
+   ],
+   "seq": "B:Q14 W:Q13 B:R15 W:P14 B:Q15 W:S14 B:P13 W:Q12 B:O14"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:Q10",
+    "W:R14",
+    "W:O16"
+   ],
+   "seq": "B:Q14 W:Q13 B:P14 W:R15 B:P16 W:S17 B:P13"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:Q10",
+    "W:R14",
+    "W:O16"
+   ],
+   "seq": "B:O15 W:N15 B:P15 W:R17 B:N16 W:R16 B:M16"
+  },
+  {
+   "setup": [
+    "B:Q16",
+    "B:Q10",
+    "W:R14",
+    "W:O16"
+   ],
+   "seq": "B:P16 W:O15 B:Q14 W:Q13 B:P14 W:S15 B:S16"
+  }
+ ],
+ "sangenbasami": [],
+ "sangentakabasami": []
+}
