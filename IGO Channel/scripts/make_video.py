@@ -64,6 +64,35 @@ def parse_moves(s):
     return out
 
 
+def neighbors(pt):
+    ci, r = COLS.index(pt[0]), int(pt[1:])
+    out = []
+    for dc, dr in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+        c2, r2 = ci + dc, r + dr
+        if 0 <= c2 < 19 and 1 <= r2 <= 19:
+            out.append(f"{COLS[c2]}{r2}")
+    return out
+
+
+def remove_captured(board, pt):
+    """pt に打った直後、呼吸点のなくなった相手の石を取る。"""
+    enemy = "W" if board[pt] == "B" else "B"
+    for n in neighbors(pt):
+        if board.get(n) != enemy:
+            continue
+        group, stack, libs = {n}, [n], False
+        while stack:
+            for m in neighbors(stack.pop()):
+                if m not in board:
+                    libs = True
+                elif board[m] == enemy and m not in group:
+                    group.add(m)
+                    stack.append(m)
+        if not libs:
+            for g in group:
+                del board[g]
+
+
 def draw_board(img, setup, moves, marks=(), cross=(), good=()):
     d = ImageDraw.Draw(img)
     d.rectangle([BOARD_X, BOARD_Y, BOARD_X + BOARD_SIZE, BOARD_Y + BOARD_SIZE], fill=WOOD)
@@ -83,11 +112,20 @@ def draw_board(img, setup, moves, marks=(), cross=(), good=()):
 
     r = 41
     num_font = font(6, 34)
-    stones = [(c, mv, None) for c, mv in parse_moves(setup)]
-    stones += [(c, mv, i) for i, (c, mv) in enumerate(parse_moves(moves), 1)]
-    last = stones[-1][1] if moves else None
-    for color, mv, n in stones:
+    board, number = {}, {}
+    for c, mv in parse_moves(setup):
+        board[mv] = c
+    last = None
+    for i, (c, mv) in enumerate(parse_moves(moves), 1):
         if mv == "pass":
+            continue
+        board[mv] = c
+        number[mv] = i
+        remove_captured(board, mv)
+        last = mv
+    stones = [(c, mv, number.get(mv)) for mv, c in board.items()]
+    for color, mv, n in stones:
+        if mv[0] not in VIEW_COLS or int(mv[1:]) not in VIEW_ROWS:
             continue
         x, y = point_xy(mv)
         fill, text = ((15, 15, 15), (255, 255, 255)) if color == "B" else ((250, 250, 250), (15, 15, 15))
@@ -116,7 +154,7 @@ def wrap(text, fnt, width):
         if ch == "\n":
             lines.append(cur)
             cur = ""
-        elif fnt.getlength(cur + ch) > width:
+        elif fnt.getlength(cur + ch) > width and ch not in "、。，．！？」）ー":  # 行頭禁則：句読点は前の行に残す
             lines.append(cur)
             cur = ch
         else:
