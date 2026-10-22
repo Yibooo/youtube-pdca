@@ -166,7 +166,7 @@ def wrap(text, fnt, width):
 
 def render_beat(spec, beat):
     img = Image.new("RGB", (W, H), PANEL)
-    draw_board(img, spec["base"], beat.get("moves", ""), beat.get("marks", []),
+    draw_board(img, beat.get("base", spec["base"]), beat.get("moves", ""), beat.get("marks", []),
                beat.get("cross", []), beat.get("good", []))
     d = ImageDraw.Draw(img)
     px, pw = 1100, 760
