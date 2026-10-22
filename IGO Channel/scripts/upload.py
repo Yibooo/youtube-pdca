@@ -18,6 +18,8 @@ from googleapiclient.http import MediaFileUpload
 
 ROOT = Path(__file__).resolve().parent.parent
 SCOPES = ["https://www.googleapis.com/auth/youtube"]
+# アップロード先：囲碁好きの定石チャンネル（@IGO-Channel-JP）。違うチャンネルの認証ならアップロードしない
+EXPECTED_CHANNEL_ID = "UCZO7fh-u3AJ_1NppOjCahpg"
 
 
 def service():
@@ -47,6 +49,10 @@ def main(spec_path):
         "status": {"privacyStatus": "private", "selfDeclaredMadeForKids": False},
     }
     yt = service()
+    ch = yt.channels().list(part="snippet", mine=True).execute()["items"][0]
+    if ch["id"] != EXPECTED_CHANNEL_ID:
+        raise SystemExit(f"認証中のチャンネルが違います: {ch['snippet']['title']} ({ch['id']})")
+    print(f"channel: {ch['snippet']['title']} ({ch['snippet'].get('customUrl')})")
     req = yt.videos().insert(part="snippet,status", body=body,
                              media_body=MediaFileUpload(str(out / "video.mp4"), chunksize=-1, resumable=True))
     resp = None
