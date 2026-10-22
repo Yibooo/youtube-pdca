@@ -19,10 +19,15 @@ VISITS = 2000
 
 
 def find_engine():
-    """環境変数 KATAGO_BIN / KATAGO_CONFIG / KATAGO_MODEL があればそれを使う（自前ビルド用）。"""
+    """環境変数 KATAGO_BIN / KATAGO_CONFIG / KATAGO_MODEL、次に ~/katago/（自前ビルド）、最後に brew 版を探す。"""
     env = [os.environ.get(k) for k in ("KATAGO_BIN", "KATAGO_CONFIG", "KATAGO_MODEL")]
     if all(env):
         return env[0], Path(env[1]), Path(env[2])
+    home = Path.home() / "katago"
+    if (home / "katago").exists() and (home / "analysis_example.cfg").exists():
+        models = sorted(home.glob("*.bin.gz"))
+        if models:
+            return str(home / "katago"), home / "analysis_example.cfg", models[-1]
     exe = shutil.which("katago")
     if not exe:
         raise SystemExit("katago が見つかりません（brew install katago）")
