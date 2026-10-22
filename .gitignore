@@ -10,3 +10,6 @@ venv/
 *.wav
 *.mp4
 *.png
+
+# IGO Channel: generated video build outputs
+IGO Channel/videos/*/build/
