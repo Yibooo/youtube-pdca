@@ -1,9 +1,9 @@
 import json, sys, urllib.request, time
 def get(nid):
-    for _ in range(3):
+    for i in range(8):
         try:
             return json.load(urllib.request.urlopen(urllib.request.Request(f"https://online-go.com/oje/position?id={nid}",headers={"User-Agent":"Mozilla/5.0 igo-research"}), timeout=20))
-        except Exception as e: time.sleep(2)
+        except Exception as e: time.sleep(3*(i+1))
 def child(node, mv):
     for m in node["next_moves"]:
         if m["placement"]==mv: return get(m["node_id"])
