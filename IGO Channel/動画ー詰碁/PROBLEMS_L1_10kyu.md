@@ -10,25 +10,25 @@
 | ID | 課題 | 手筋 | 初手 | 出典 | 動画利用 | KataGo |
 |---|---|---|---|---|---|---|
 | [L1-01](#l1-01) | 黒先、生き | 隅の曲がり四目、対称の急所、手順の順番 | T19 | [GokyoShumyoSection1Problem1](https://senseis.xmp.net/?GokyoShumyoSection1Problem1) | ◎ 古典 | ✅ 動画 #1 |
-| [L1-02](#l1-02) | 黒先、殺し | 眼形の急所 | R19 | [BeginnerExercise1](https://senseis.xmp.net/?BeginnerExercise1) | △ 要判断 | — |
+| [L1-02](#l1-02) | 黒先、殺し | 眼形の急所 | R19 | [BeginnerExercise1](https://senseis.xmp.net/?BeginnerExercise1) | △ SL（概要欄に表示） | — |
 | [L1-03](#l1-03) | 黒先、生き | 急所 | O19 | [GokyoShumyoSection1Problem42](https://senseis.xmp.net/?GokyoShumyoSection1Problem42) | ◎ 古典 | — |
-| [L1-04](#l1-04) | 黒先、生き | 欠け眼、捨て石 | P18 | [BeginnerExercise7](https://senseis.xmp.net/?BeginnerExercise7) | △ 要判断 | — |
-| [L1-05](#l1-05) | 黒先、生き | ホウリコミ、捨て石、手筋 | Q18 | [BeginnerExercise19](https://senseis.xmp.net/?BeginnerExercise19) | △ 要判断 | — |
-| [L1-06](#l1-06) | 黒先、殺し | ホウリコミ、ダメ詰まり、急所 | R19 | [BeginnerExercise20](https://senseis.xmp.net/?BeginnerExercise20) | △ 要判断 | — |
-| [L1-07](#l1-07) | 黒先、殺し | ウッテガエシ、対称の急所 | K19 | [BeginnerExercise23](https://senseis.xmp.net/?BeginnerExercise23) | △ 要判断 | — |
-| [L1-08](#l1-08) | 黒先、殺し | 眼形の急所 | L19 | [BeginnerExercise24](https://senseis.xmp.net/?BeginnerExercise24) | △ 要判断 | — |
-| [L1-09](#l1-09) | 黒先、殺し | ウッテガエシ | R18 | [BeginnerExercise35](https://senseis.xmp.net/?BeginnerExercise35) | △ 要判断 | — |
-| [L1-10](#l1-10) | 黒先、殺し | ウッテガエシ、急所、欠け眼 | J11 | [BeginnerExercise36](https://senseis.xmp.net/?BeginnerExercise36) | △ 要判断 | — |
-| [L1-11](#l1-11) | 黒先、殺し | 眼形の急所 | K9 | [BeginnerExercise38](https://senseis.xmp.net/?BeginnerExercise38) | △ 要判断 | — |
-| [L1-12](#l1-12) | 黒先、殺し | 眼形の急所 | L15 | [BeginnerExercise39](https://senseis.xmp.net/?BeginnerExercise39) | △ 要判断 | — |
-| [L1-13](#l1-13) | 黒先、生き | ダメ詰まり | T16 | [BeginnerExercise79](https://senseis.xmp.net/?BeginnerExercise79) | △ 要判断 | — |
-| [L1-14](#l1-14) | 黒先、生き | 手順の順番 | N18 | [BeginnerExercise52](https://senseis.xmp.net/?BeginnerExercise52) | △ 要判断 | — |
-| [L1-15](#l1-15) | 黒先、殺し | ダメ詰まり、捨て石 | L11 | [BeginnerExercise53](https://senseis.xmp.net/?BeginnerExercise53) | △ 要判断 | — |
-| [L1-16](#l1-16) | 黒先、殺し | セキ | M19 | [BeginnerExercise57](https://senseis.xmp.net/?BeginnerExercise57) | △ 要判断 | — |
-| [L1-17](#l1-17) | 黒先、生き | 手筋 | S19 | [BeginnerExercise59](https://senseis.xmp.net/?BeginnerExercise59) | △ 要判断 | — |
-| [L1-18](#l1-18) | 黒先、生き | ダメ詰まり | R19 | [BeginnerExercise63](https://senseis.xmp.net/?BeginnerExercise63) | △ 要判断 | — |
-| [L1-19](#l1-19) | 黒先、生き | ナカデ、急所 | S18 | [BeginnerExercise69](https://senseis.xmp.net/?BeginnerExercise69) | △ 要判断 | — |
-| [L1-20](#l1-20) | 黒先、生き | ダメ詰まり、ナカデ、急所 | S18 | [BeginnerExercise83](https://senseis.xmp.net/?BeginnerExercise83) | △ 要判断 | — |
+| [L1-04](#l1-04) | 黒先、生き | 欠け眼、捨て石 | P18 | [BeginnerExercise7](https://senseis.xmp.net/?BeginnerExercise7) | △ SL（概要欄に表示） | — |
+| [L1-05](#l1-05) | 黒先、生き | ホウリコミ、捨て石、手筋 | Q18 | [BeginnerExercise19](https://senseis.xmp.net/?BeginnerExercise19) | △ SL（概要欄に表示） | — |
+| [L1-06](#l1-06) | 黒先、殺し | ホウリコミ、ダメ詰まり、急所 | R19 | [BeginnerExercise20](https://senseis.xmp.net/?BeginnerExercise20) | △ SL（概要欄に表示） | — |
+| [L1-07](#l1-07) | 黒先、殺し | ウッテガエシ、対称の急所 | K19 | [BeginnerExercise23](https://senseis.xmp.net/?BeginnerExercise23) | △ SL（概要欄に表示） | — |
+| [L1-08](#l1-08) | 黒先、殺し | 眼形の急所 | L19 | [BeginnerExercise24](https://senseis.xmp.net/?BeginnerExercise24) | △ SL（概要欄に表示） | — |
+| [L1-09](#l1-09) | 黒先、殺し | ウッテガエシ | R18 | [BeginnerExercise35](https://senseis.xmp.net/?BeginnerExercise35) | △ SL（概要欄に表示） | — |
+| [L1-10](#l1-10) | 黒先、殺し | ウッテガエシ、急所、欠け眼 | J11 | [BeginnerExercise36](https://senseis.xmp.net/?BeginnerExercise36) | △ SL（概要欄に表示） | — |
+| [L1-11](#l1-11) | 黒先、殺し | 眼形の急所 | K9 | [BeginnerExercise38](https://senseis.xmp.net/?BeginnerExercise38) | △ SL（概要欄に表示） | — |
+| [L1-12](#l1-12) | 黒先、殺し | 眼形の急所 | L15 | [BeginnerExercise39](https://senseis.xmp.net/?BeginnerExercise39) | △ SL（概要欄に表示） | — |
+| [L1-13](#l1-13) | 黒先、生き | ダメ詰まり | T16 | [BeginnerExercise79](https://senseis.xmp.net/?BeginnerExercise79) | △ SL（概要欄に表示） | — |
+| [L1-14](#l1-14) | 黒先、生き | 手順の順番 | N18 | [BeginnerExercise52](https://senseis.xmp.net/?BeginnerExercise52) | △ SL（概要欄に表示） | — |
+| [L1-15](#l1-15) | 黒先、殺し | ダメ詰まり、捨て石 | L11 | [BeginnerExercise53](https://senseis.xmp.net/?BeginnerExercise53) | △ SL（概要欄に表示） | — |
+| [L1-16](#l1-16) | 黒先、殺し | セキ | M19 | [BeginnerExercise57](https://senseis.xmp.net/?BeginnerExercise57) | △ SL（概要欄に表示） | — |
+| [L1-17](#l1-17) | 黒先、生き | 手筋 | S19 | [BeginnerExercise59](https://senseis.xmp.net/?BeginnerExercise59) | △ SL（概要欄に表示） | — |
+| [L1-18](#l1-18) | 黒先、生き | ダメ詰まり | R19 | [BeginnerExercise63](https://senseis.xmp.net/?BeginnerExercise63) | △ SL（概要欄に表示） | — |
+| [L1-19](#l1-19) | 黒先、生き | ナカデ、急所 | S18 | [BeginnerExercise69](https://senseis.xmp.net/?BeginnerExercise69) | △ SL（概要欄に表示） | — |
+| [L1-20](#l1-20) | 黒先、生き | ダメ詰まり、ナカデ、急所 | S18 | [BeginnerExercise83](https://senseis.xmp.net/?BeginnerExercise83) | △ SL（概要欄に表示） | — |
 
 ## L1-01
 

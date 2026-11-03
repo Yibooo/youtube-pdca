@@ -25,10 +25,10 @@
 | [L2-14](#l2-14) | 黒先、生き | 急所 | L18 | [GokyoShumyoSection1Problem67](https://senseis.xmp.net/?GokyoShumyoSection1Problem67) | ◎ 古典 | — |
 | [L2-15](#l2-15) | 黒先、生き | 眼形の急所 | T18 | [GokyoShumyoSection1Problem96](https://senseis.xmp.net/?GokyoShumyoSection1Problem96) | ◎ 古典 | — |
 | [L2-16](#l2-16) | 黒先、殺し | 手筋 | T17 | [GokyoShumyoSection2Problem17](https://senseis.xmp.net/?GokyoShumyoSection2Problem17) | ◎ 古典 | — |
-| [L2-17](#l2-17) | 黒先、殺し | ホウリコミ、隅の曲がり四目 | T9 | [KyuExercise9](https://senseis.xmp.net/?KyuExercise9) | △ 要判断 | — |
-| [L2-18](#l2-18) | 黒先、殺し | 眼形の急所 | P17 | [KyuExercise29](https://senseis.xmp.net/?KyuExercise29) | △ 要判断 | — |
-| [L2-19](#l2-19) | 黒先、殺し | ホウリコミ、手順の順番 | Q19 | [KyuExercise30](https://senseis.xmp.net/?KyuExercise30) | △ 要判断 | — |
-| [L2-20](#l2-20) | 黒先、殺し | ホウリコミ、セキ、手筋 | R17 | [KyuExercise40](https://senseis.xmp.net/?KyuExercise40) | △ 要判断 | — |
+| [L2-17](#l2-17) | 黒先、殺し | ホウリコミ、隅の曲がり四目 | T9 | [KyuExercise9](https://senseis.xmp.net/?KyuExercise9) | △ SL（概要欄に表示） | — |
+| [L2-18](#l2-18) | 黒先、殺し | 眼形の急所 | P17 | [KyuExercise29](https://senseis.xmp.net/?KyuExercise29) | △ SL（概要欄に表示） | — |
+| [L2-19](#l2-19) | 黒先、殺し | ホウリコミ、手順の順番 | Q19 | [KyuExercise30](https://senseis.xmp.net/?KyuExercise30) | △ SL（概要欄に表示） | — |
+| [L2-20](#l2-20) | 黒先、殺し | ホウリコミ、セキ、手筋 | R17 | [KyuExercise40](https://senseis.xmp.net/?KyuExercise40) | △ SL（概要欄に表示） | — |
 
 ## L2-01
 
