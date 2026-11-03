@@ -1,7 +1,7 @@
 # 動画テンプレート（全エピソード共通）
 
 1本の動画は「問題 → 解説 → 正解 → **不正解の手順と損失** → まとめ」で作る。
-台本は `videos/<ep>/spec.json`、生成は `scripts/make_video.py`、アップロードは `scripts/upload.py`。
+台本は `videos/<ep>/spec.json`、生成は `../scripts/make_video.py`、アップロードは `../scripts/upload.py`。
 
 ## 構成（必須）
 
@@ -31,7 +31,7 @@
 
 1. 検証表（`joseki/PLAYLIST1_*.md`）の該当定石から、正解手順を取る（OGS の IDEAL 手順＋日本語ソース）
 2. 問題にする「不正解の手」は、OGS の MISTAKE / 条件付き GOOD ノード、または解説サイトの失敗図から選ぶ。**反撃手順はその手の下の OGS の手順をそのまま使う**
-3. KataGo（`scripts/katago_eval.py`）は**正解 vs 不正解の1回だけ**（約3分）。損が出ることの確認に使い、動画では目数を言わない
+3. KataGo（`../scripts/katago_eval.py`）は**正解 vs 不正解の1回だけ**（約3分）。損が出ることの確認に使い、動画では目数を言わない
    - 手抜きの損を測るときは `pass` ではなく、他の大場（D4 など）に打った手と比べる（`pass` は相手に1手を丸ごと与えるため、約12目多く出る）
 4. `spec.json` を書く → `audio_query` で読みを確認 → `make_video.py` → 代表フレームとサムネを目視 → `upload.py`
 

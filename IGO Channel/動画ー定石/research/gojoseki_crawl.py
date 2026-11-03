@@ -21,6 +21,6 @@ while queue:
         for l in links:
             queue.append((p+l,d+1))
     time.sleep(0.5)
-json.dump(seen,open("../../sources/raw/gojoseki.json","w"),ensure_ascii=False,indent=1)
+json.dump(seen,open("../sources/raw/gojoseki.json","w"),ensure_ascii=False,indent=1)
 print(len(seen))
 for p,v in seen.items(): print(v["depth"],p,v["title"],len(v["wgo"]))

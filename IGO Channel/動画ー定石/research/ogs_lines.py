@@ -28,4 +28,4 @@ for spec in sys.argv[1:]:
     src=n.get("joseki_source") or {}
     res[spec]={"line":line,"notes":notes,"mistakes":mistakes,"end_src":src.get("description")}
     print(spec, "=>", " ".join(line), file=sys.stderr)
-json.dump(res,open("../../sources/raw/ogs_lines.json","w"),ensure_ascii=False,indent=1)
+json.dump(res,open("../sources/raw/ogs_lines.json","w"),ensure_ascii=False,indent=1)

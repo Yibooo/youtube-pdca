@@ -97,7 +97,7 @@ for key,path in PAGES.items():
             setup=[f"{c}:{g(tf,'%c%c'%(x+97,y+97))}" for c,(x,y) in stones[:len(stones)-len(seq)]]
             pv.append({"setup":setup,"seq":" ".join(f"{c}:{g(tf,m)}" for c,m in seq),"comments":comments})
     out[key]=pv; time.sleep(0.5)
-json.dump(out,open("../../sources/raw/igobook.json","w"),ensure_ascii=False,indent=1)
+json.dump(out,open("../sources/raw/igobook.json","w"),ensure_ascii=False,indent=1)
 for k,v in out.items():
     print("=====",k)
     for p in v:

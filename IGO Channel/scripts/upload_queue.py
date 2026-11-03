@@ -2,7 +2,7 @@
 """まだアップしていない回を、順番に非公開でアップロードする。
 
 使い方:
-    python upload_queue.py ep15 ep16 ...   （videos/ のフォルダ名の先頭一致）
+    python upload_queue.py ep15 ep16 ...   （各 videos/ のフォルダ名の先頭一致。Shorts は s01 など）
 
 - build/upload.json がある回はアップ済みとして飛ばす。
 - 1日の上限（uploadLimitExceeded）に当たったら、そこで止めて終了コード 2 を返す。
@@ -15,11 +15,13 @@ from googleapiclient.errors import HttpError, ResumableUploadError
 
 import upload
 
-VIDEOS = Path(__file__).resolve().parent.parent / "videos"
+ROOT = Path(__file__).resolve().parent.parent
+VIDEO_DIRS = [ROOT / "動画ー定石" / "videos", ROOT / "Shortsー定石" / "videos"]
 
 
 def main(prefixes):
-    targets = sorted(d for d in VIDEOS.iterdir() if d.is_dir() and any(d.name.startswith(p) for p in prefixes))
+    dirs = [d for root in VIDEO_DIRS for d in root.iterdir()]
+    targets = sorted((d for d in dirs if d.is_dir() and any(d.name.startswith(p) for p in prefixes)), key=lambda d: d.name)
     for d in targets:
         if (d / "build" / "upload.json").exists():
             print(f"{d.name}: skip (uploaded)")

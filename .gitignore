@@ -12,4 +12,6 @@ venv/
 *.png
 
 # IGO Channel: generated video build outputs
-IGO Channel/videos/*/build/
+IGO Channel/動画ー定石/videos/*/build/
+IGO Channel/動画ー詰碁/videos/*/build/
+IGO Channel/Shortsー定石/videos/*/build/

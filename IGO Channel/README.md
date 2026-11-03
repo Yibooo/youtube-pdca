@@ -9,24 +9,25 @@
 
 | ファイル | 内容 |
 |---|---|
-| [EPISODES_1-50.md](./EPISODES_1-50.md) | **動画リスト #1〜#50（作る順番・テーマ・問題ネタ・状態）** |
-| [VIDEO_TEMPLATE.md](./VIDEO_TEMPLATE.md) | **動画テンプレート（問題→正解→不正解の手順と損失→まとめ）と台本・音声のルール** |
+| [動画ー定石/EPISODES_1-50.md](./動画ー定石/EPISODES_1-50.md) | **動画リスト #1〜#50（作る順番・テーマ・問題ネタ・状態）** |
+| [動画ー定石/VIDEO_TEMPLATE.md](./動画ー定石/VIDEO_TEMPLATE.md) | **動画テンプレート（問題→正解→不正解の手順と損失→まとめ）と台本・音声のルール** |
 | [STRATEGY.md](./STRATEGY.md) | 方針・ベンチマーク分析（柳澤理志チャンネル）・タイトル/サムネ規則・収益化戦略 |
-| [CONTENT_ROADMAP.md](./CONTENT_ROADMAP.md) | プレイリスト構成と動画リスト（星・小ケイマかかり → ダイレクト三々 → 一間かかり … → 小目） |
+| [動画ー定石/CONTENT_ROADMAP.md](./動画ー定石/CONTENT_ROADMAP.md) | プレイリスト構成と動画リスト（星・小ケイマかかり → ダイレクト三々 → 一間かかり … → 小目） |
 | [ACTION_PLAN.md](./ACTION_PLAN.md) | フェーズ別アクションプランとKPI |
-| [joseki/PLAYLIST1_hoshi_kogeima_kakari.md](./joseki/PLAYLIST1_hoshi_kogeima_kakari.md) | **Playlist 1 の定石整理・検証表（レビュー待ち）** |
-| [sources/SOURCES.md](./sources/SOURCES.md) | 信頼できる定石ソース一覧と「3ソース検証ルール」 |
-| [sources/verification_template.yaml](./sources/verification_template.yaml) | 定石1本ごとの検証記録テンプレート |
+| [動画ー定石/joseki/PLAYLIST1_hoshi_kogeima_kakari.md](./動画ー定石/joseki/PLAYLIST1_hoshi_kogeima_kakari.md) | **Playlist 1 の定石整理・検証表（レビュー待ち）** |
+| [動画ー定石/sources/SOURCES.md](./動画ー定石/sources/SOURCES.md) | 信頼できる定石ソース一覧と「3ソース検証ルール」 |
+| [動画ー定石/sources/verification_template.yaml](./動画ー定石/sources/verification_template.yaml) | 定石1本ごとの検証記録テンプレート |
 
-## ディレクトリ構成（予定）
+## ディレクトリ構成
 
 ```
 IGO Channel/
-├── joseki/            # 検証済み定石のSGF（1定石=1ファイル。動画の唯一の正）
-├── sources/           # 検証記録 <joseki_id>.yaml（3ソース以上の照合結果）
-├── scripts/           # 生成パイプライン（2026_March/scripts から移植・改造）
-├── config.json        # チャンネル設定・プレイリストID・投稿頻度
-└── data/              # 再生数・CTR などPDCA用データ
+├── 動画ー定石/        # 定石の長尺動画（台本・検証表・ソース・調査ツール）
+├── 動画ー詰碁/        # 詰碁の長尺動画（方針・問題集・検証ツール）
+├── Shortsー定石/      # 定石の Shorts（台本・縦型レンダラー）
+├── scripts/           # 共通ツール（描画、VOICEVOX、KataGo、アップロード、認証）
+├── STRATEGY.md        # チャンネル全体の方針
+└── ACTION_PLAN.md     # チャンネル全体のアクションプラン
 ```
 
 ## 基本原則
