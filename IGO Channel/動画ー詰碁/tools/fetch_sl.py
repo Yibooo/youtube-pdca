@@ -2,10 +2,12 @@
 """Sensei's Library の詰碁ページを 1 秒に 1 回ずつ取得して JSONL に保存する。
 
 使い方: python fetch_sl.py <出力.jsonl> <ページ名> [<ページ名> ...]
+途中で止まっても、同じコマンドで続きから取得する。
 各ページの本文・棋譜（SGF）の URL と、/Solution ページがあればその本文・棋譜の URL を保存する。
 """
 import html
 import json
+import os
 import re
 import sys
 import time
@@ -17,11 +19,17 @@ BASE = "https://senseis.xmp.net/"
 
 
 def get(url):
-    time.sleep(1)
-    try:
-        return urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "curl/8"}), timeout=30).read().decode("latin-1")
-    except urllib.error.HTTPError as e:
-        return "" if e.code == 404 else (_ for _ in ()).throw(e)
+    for wait in (1, 30, 120, 300):  # 通信が切れたら間を空けてやり直す
+        time.sleep(wait)
+        try:
+            return urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "curl/8"}), timeout=30).read().decode("latin-1")
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                return ""
+            raise
+        except urllib.error.URLError as e:
+            print(f"retry {url}: {e}", file=sys.stderr)
+    raise SystemExit(f"通信できません: {url}")
 
 
 def parse(h):
@@ -36,8 +44,13 @@ def parse(h):
 
 
 def main(out, pages):
+    done = set()
+    if os.path.exists(out):  # 取得済みのページは飛ばす
+        done = {json.loads(x)["page"] for x in open(out, encoding="utf-8")}
     with open(out, "a", encoding="utf-8") as f:
         for name in pages:
+            if name in done:
+                continue
             q = urllib.parse.quote(name, safe="/")
             h = get(BASE + "?" + q)
             if not h or "does not yet exist" in h:
