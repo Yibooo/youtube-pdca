@@ -206,7 +206,7 @@ def render_thumbnail(spec):
         d.text((1080, y), line, font=big, fill=RED, stroke_width=10, stroke_fill=(255, 255, 255))
         y += 190
     d.text((1080, y + 40), t["sub"], font=font(8, 90), fill=(255, 255, 255), stroke_width=6, stroke_fill=BLUE)
-    d.text((1080, 940), "囲碁定石", font=font(7, 60), fill=GOLD)
+    d.text((1080, 940), t.get("brand", "囲碁定石"), font=font(7, 60), fill=GOLD)
     return img
 
 
