@@ -1,0 +1,215 @@
+{
+ "title": "GO（581A）2026年5月期 通期",
+ "subtitle": "売上高から当期純利益まで（日本基準、単位：億円、％は売上高に対する比率）",
+ "source": "出典：GO株式会社「第50期 有価証券報告書」2026年8月28日。図は当チャンネルが数字から作成",
+ "base": 41446,
+ "decimals": 1,
+ "rounding": "floor",
+ "gap": 40,
+ "nodes": [
+  {
+   "id": "app",
+   "label": "アプリ配車",
+   "value": 19566,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "rel",
+   "label": "タクシー関連サービス",
+   "value": 18215,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "oth",
+   "label": "その他（新規事業など）",
+   "value": 3664,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "rev",
+   "label": "売上高",
+   "value": 41446,
+   "col": 1,
+   "kind": "revenue",
+   "label_side": "above",
+   "pct": false
+  },
+  {
+   "id": "cogs",
+   "label": "売上原価",
+   "value": 19034,
+   "col": 2,
+   "kind": "cost"
+  },
+  {
+   "id": "gp",
+   "label": "売上総利益",
+   "value": 22412,
+   "col": 2,
+   "kind": "profit"
+  },
+  {
+   "id": "sga",
+   "label": "販管費",
+   "value": 15370,
+   "col": 3,
+   "kind": "cost"
+  },
+  {
+   "id": "op",
+   "label": "営業利益",
+   "value": 7041,
+   "col": 3,
+   "kind": "profit"
+  },
+  {
+   "id": "nonop",
+   "label": "営業外損益",
+   "value": 584,
+   "col": 4,
+   "kind": "cost",
+   "pct": false
+  },
+  {
+   "id": "ord",
+   "label": "経常利益",
+   "value": 6457,
+   "col": 4,
+   "kind": "profit"
+  },
+  {
+   "id": "sp",
+   "label": "特別損益",
+   "value": 781,
+   "col": 4,
+   "kind": "plus",
+   "pct": false
+  },
+  {
+   "id": "taxb",
+   "label": "法人税等（戻り）",
+   "value": 2468,
+   "col": 4,
+   "kind": "plus",
+   "pct": false
+  },
+  {
+   "id": "ni_all",
+   "label": "当期純利益",
+   "value": 9706,
+   "col": 5,
+   "kind": "profit"
+  },
+  {
+   "id": "ni",
+   "label": "親会社株主分",
+   "short": "純利益",
+   "value": 8838,
+   "col": 6,
+   "kind": "profit"
+  },
+  {
+   "id": "nci",
+   "label": "非支配株主分",
+   "value": 867,
+   "col": 6,
+   "kind": "profit",
+   "pct": false
+  }
+ ],
+ "links": [
+  {
+   "from": "app",
+   "to": "rev",
+   "value": 19566
+  },
+  {
+   "from": "rel",
+   "to": "rev",
+   "value": 18215
+  },
+  {
+   "from": "oth",
+   "to": "rev",
+   "value": 3664
+  },
+  {
+   "from": "rev",
+   "to": "cogs",
+   "value": 19034
+  },
+  {
+   "from": "rev",
+   "to": "gp",
+   "value": 22412
+  },
+  {
+   "from": "gp",
+   "to": "sga",
+   "value": 15370
+  },
+  {
+   "from": "gp",
+   "to": "op",
+   "value": 7041
+  },
+  {
+   "from": "op",
+   "to": "nonop",
+   "value": 584
+  },
+  {
+   "from": "op",
+   "to": "ord",
+   "value": 6457
+  },
+  {
+   "from": "ord",
+   "to": "ni_all",
+   "value": 6457
+  },
+  {
+   "from": "sp",
+   "to": "ni_all",
+   "value": 781
+  },
+  {
+   "from": "taxb",
+   "to": "ni_all",
+   "value": 2468
+  },
+  {
+   "from": "ni_all",
+   "to": "ni",
+   "value": 8838
+  },
+  {
+   "from": "ni_all",
+   "to": "nci",
+   "value": 867
+  }
+ ],
+ "thumbnail": {
+  "company": "GO（タクシーアプリ）",
+  "lines": [
+   "営業利益",
+   "2.6倍の",
+   "理由"
+  ],
+  "accent": [
+   "2.6倍の"
+  ],
+  "period": "2026年5月期 決算",
+  "show": [
+   "app",
+   "op"
+  ],
+  "highlight": "op"
+ }
+}

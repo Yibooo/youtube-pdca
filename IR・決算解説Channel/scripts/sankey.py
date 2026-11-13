@@ -34,9 +34,16 @@ def font(weight, size):
     raise SystemExit("ヒラギノ角ゴシックが見つかりません")
 
 
-def oku(v):
-    """百万円 → 「1兆848億」のような表記（会社の資料に合わせて億未満は切り捨て）"""
-    o = int(v // 100)
+def oku(v, data=None):
+    """百万円 → 「1兆848億」のような表記。会社の資料に合わせて、data の rounding（floor＝切り捨て／round＝四捨五入）と
+    decimals（億未満の桁数。小さい会社は1にする）で丸める"""
+    data = data or {}
+    dec = data.get("decimals", 0)
+    x = v / 100
+    o = (int(x * 10 ** dec) / 10 ** dec) if data.get("rounding", "floor") == "floor" else round(x, dec)
+    if dec:
+        return f"{o:,.{dec}f}億"
+    o = int(o)
     if o >= 10000:
         return f"{o // 10000}兆{o % 10000:,}億" if o % 10000 else f"{o // 10000}兆"
     return f"{o:,}億"
@@ -117,7 +124,7 @@ def draw(data, size, box, label_scale=1.0, show=None, highlight=None, short=Fals
         d.rectangle([n["x"], n["y"], n["x"] + node_w, n["y"] + max(n["h"], 2 * SS)], fill=color)
         if show is not None and n["id"] not in show:
             continue
-        lines = [(n.get("short", n["label"]) if short else n["label"], f_name), (oku(n["value"]), f_val)]
+        lines = [(n.get("short", n["label"]) if short else n["label"], f_name), (oku(n["value"], data), f_val)]
         if n.get("pct", True):
             lines.append((f"{n['value'] / total * 100:.1f}%", f_pct))
         side = n.get("label_side", "right")
