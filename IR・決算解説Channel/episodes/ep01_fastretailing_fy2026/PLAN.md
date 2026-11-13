@@ -1,8 +1,8 @@
 # #1 ファーストリテイリング（9983）2026年8月期 通期決算
 
-状態：📁 動画 V2 をローカル保存（2026-11-14、10分16秒、`build/video.mp4`・`build/thumbnail.png`）。未アップロード。V1 のレビューは WORKFLOW.md の「過去の指摘」
+状態：📁 動画 V3 をローカル保存（2026-11-14、11分25秒、`build/video.mp4`・`build/thumbnail.png`）。未アップロード。V1・V2 のレビューは WORKFLOW.md の「過去の指摘」
 
-- 台本と画面：[spec.json](./spec.json)（81セリフ、10章）。声は VOICEVOX「No.7 アナウンス」
+- 台本と画面：[spec.json](./spec.json)（90セリフ、10章）。声は VOICEVOX「No.7 アナウンス」
 - 骨子の「引用候補 C」は、COO 資料の p.6（売上100億円以上の店舗）に変更した
 
 ## 使った資料

@@ -136,6 +136,8 @@ def v_bars(c, v, ctx):
         if it.get("change"):
             label += f"（{it['change']}）"
         c.text((xe + 12, yb + bh / 2), label, fv, fill=col, anchor="lm")
+        if it.get("sub"):  # 売上の棒の下に、事業利益と利益率を併記する
+            c.text((x0, yb + bh + 8), it["sub"], font(6, 27), fill=COLORS["profit"])
     if v.get("note"):
         c.text((120, 880), v["note"], font(5, 26), fill=SUB)
 

@@ -97,7 +97,7 @@ python scripts/sankey.py episodes/ep01_fastretailing_fy2026/data.json episodes/e
 
 | # | 企業 | 決算期 | 状態 |
 |---|---|---|---|
-| 1 | [ファーストリテイリング（9983）](./episodes/ep01_fastretailing_fy2026/PLAN.md) | 2026年8月期 通期 | 📁 動画 V2 をローカル保存（10分16秒）。未アップロード |
+| 1 | [ファーストリテイリング（9983）](./episodes/ep01_fastretailing_fy2026/PLAN.md) | 2026年8月期 通期 | 📁 動画 V3 をローカル保存（11分25秒）。未アップロード |
 
 候補：GO、キオクシア（ユーザー案）。
 
