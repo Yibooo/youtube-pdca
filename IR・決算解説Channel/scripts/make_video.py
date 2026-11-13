@@ -82,13 +82,14 @@ def v_title(c, v, ctx):
 def v_points(c, v, ctx):
     c.text((160, 150), v["title"], font(8, 56))
     y = 270
+    step = min(130, 620 / len(v["items"]))
     for i, item in enumerate(v["items"], 1):
         on = i - 1 in v.get("highlight", range(len(v["items"])))
         col = COLORS["profit"] if on else (190, 190, 190)
         c.rrect((160, y, 236, y + 76), r=38, fill=col)
         c.text((198, y + 38), str(i), font(8, 40), fill=(255, 255, 255), anchor="mm")
         c.text((270, y + 8), item, font(7, 44), fill=INK if on else (170, 170, 170))
-        y += 130
+        y += step
 
 
 def v_sankey(c, v, ctx):
@@ -168,7 +169,7 @@ def v_cards(c, v, ctx):
     c.text((120, 110), v["title"], font(8, 48))
     items = v["items"]
     n = len(items)
-    cols = 2 if n > 2 else n
+    cols = 1 if n <= 3 else 2  # 3つまでは横いっぱいの段にする
     rows = (n + cols - 1) // cols
     gw, gh = (1680 - 40 * (cols - 1)) / cols, (680 - 40 * (rows - 1)) / rows
     for i, it in enumerate(items):
