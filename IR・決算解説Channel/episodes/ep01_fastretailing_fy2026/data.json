@@ -1,0 +1,198 @@
+{
+ "title": "ファーストリテイリング（9983）2026年8月期 通期",
+ "subtitle": "売上収益から当期利益まで（IFRS、単位：億円、％は売上収益に対する比率）",
+ "source": "出典：株式会社ファーストリテイリング「2026年8月期 決算短信〔IFRS〕（連結）」2026年10月8日。図は当チャンネルが数字から作成",
+ "base": 3963389,
+ "nodes": [
+  {
+   "id": "jp",
+   "label": "国内ユニクロ",
+   "value": 1084843,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "ovs",
+   "label": "海外ユニクロ",
+   "value": 2411135,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "gu",
+   "label": "ジーユー",
+   "value": 336717,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "gb",
+   "label": "グローバルブランド他",
+   "value": 130692,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "rev",
+   "label": "売上収益",
+   "value": 3963389,
+   "col": 1,
+   "kind": "revenue",
+   "label_side": "above",
+   "pct": false
+  },
+  {
+   "id": "cogs",
+   "label": "売上原価",
+   "value": 1774864,
+   "col": 2,
+   "kind": "cost"
+  },
+  {
+   "id": "gp",
+   "label": "売上総利益",
+   "value": 2188524,
+   "col": 2,
+   "kind": "profit"
+  },
+  {
+   "id": "sga",
+   "label": "販管費",
+   "value": 1470025,
+   "col": 3,
+   "kind": "cost"
+  },
+  {
+   "id": "bp",
+   "label": "事業利益",
+   "value": 718499,
+   "col": 3,
+   "kind": "profit"
+  },
+  {
+   "id": "fin",
+   "label": "金融収支など",
+   "value": 84006,
+   "col": 3,
+   "kind": "plus"
+  },
+  {
+   "id": "pbt",
+   "label": "税引前利益",
+   "value": 802505,
+   "col": 4,
+   "kind": "profit"
+  },
+  {
+   "id": "tax",
+   "label": "法人所得税",
+   "value": 218364,
+   "col": 5,
+   "kind": "cost"
+  },
+  {
+   "id": "ni",
+   "label": "当期利益（親会社分）",
+   "value": 542516,
+   "col": 5,
+   "kind": "profit",
+   "short": "純利益"
+  },
+  {
+   "id": "nci",
+   "label": "非支配持分",
+   "value": 41624,
+   "col": 5,
+   "kind": "profit"
+  }
+ ],
+ "links": [
+  {
+   "from": "jp",
+   "to": "rev",
+   "value": 1084843
+  },
+  {
+   "from": "ovs",
+   "to": "rev",
+   "value": 2411135
+  },
+  {
+   "from": "gu",
+   "to": "rev",
+   "value": 336717
+  },
+  {
+   "from": "gb",
+   "to": "rev",
+   "value": 130692
+  },
+  {
+   "from": "rev",
+   "to": "cogs",
+   "value": 1774864
+  },
+  {
+   "from": "rev",
+   "to": "gp",
+   "value": 2188524
+  },
+  {
+   "from": "gp",
+   "to": "sga",
+   "value": 1470025
+  },
+  {
+   "from": "gp",
+   "to": "bp",
+   "value": 718499
+  },
+  {
+   "from": "bp",
+   "to": "pbt",
+   "value": 718499
+  },
+  {
+   "from": "fin",
+   "to": "pbt",
+   "value": 84006
+  },
+  {
+   "from": "pbt",
+   "to": "tax",
+   "value": 218364
+  },
+  {
+   "from": "pbt",
+   "to": "ni",
+   "value": 542516
+  },
+  {
+   "from": "pbt",
+   "to": "nci",
+   "value": 41624
+  }
+ ],
+ "thumbnail": {
+  "company": "ユニクロ（ファーストリテイリング）",
+  "lines": [
+   "海外が",
+   "6割を稼ぐ",
+   "理由"
+  ],
+  "accent": [
+   "6割を稼ぐ"
+  ],
+  "period": "2026年8月期 決算",
+  "show": [
+   "ovs",
+   "ni"
+  ],
+  "highlight": "ovs"
+ },
+ "gap": 34
+}
