@@ -34,7 +34,8 @@
    "value": 130692,
    "col": 0,
    "kind": "segment",
-   "label_side": "left"
+   "label_side": "left",
+   "pct": false
   },
   {
    "id": "rev",
@@ -107,7 +108,8 @@
    "label": "非支配持分",
    "value": 41624,
    "col": 5,
-   "kind": "profit"
+   "kind": "profit",
+   "pct": false
   }
  ],
  "links": [
@@ -194,5 +196,5 @@
   ],
   "highlight": "ovs"
  },
- "gap": 34
+ "gap": 48
 }

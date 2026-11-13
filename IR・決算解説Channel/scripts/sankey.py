@@ -80,9 +80,13 @@ def layout(data, box):
     return nodes, k, node_w
 
 
-def draw(data, size, box, label_scale=1.0, show=None, highlight=None, short=False):
-    """show：ラベルを出すノードの id（None ならすべて）。highlight：目立たせるノードの id。short：ノードの short 名を使う"""
+def draw(data, size, box, label_scale=1.0, show=None, highlight=None, short=False, upto=None):
+    """show：ラベルを出すノードの id（None ならすべて）。highlight：目立たせるノードの id（1つかリスト）。
+    short：ノードの short 名を使う。upto：この列までだけ描く（動画で1段ずつ見せるとき）"""
     W, H = size
+    if isinstance(highlight, str):
+        highlight = [highlight]
+    highlight = set(highlight or [])
     img = Image.new("RGB", (W * SS, H * SS), tuple(data.get("bg", (246, 246, 243))))
     d = ImageDraw.Draw(img, "RGBA")
     box = [v * SS for v in box]
@@ -95,9 +99,11 @@ def draw(data, size, box, label_scale=1.0, show=None, highlight=None, short=Fals
         ya, yb = a["y"] + a["out"], b["y"] + b["in"]
         a["out"] += h
         b["in"] += h
+        if upto is not None and b["col"] > upto:
+            continue
         color = COLORS[b["kind"] if b["kind"] in ("cost",) else (a["kind"] if b["kind"] == "revenue" else b["kind"])]
         alpha = 70
-        if highlight in (ln["from"], ln["to"]):
+        if highlight & {ln["from"], ln["to"]}:
             color, alpha = COLORS["highlight"], 120
         d.polygon(bezier_band(a["x"] + node_w, ya, ya + h, b["x"], yb, yb + h), fill=color + (alpha,))
 
@@ -105,7 +111,9 @@ def draw(data, size, box, label_scale=1.0, show=None, highlight=None, short=Fals
     f_val = font(6, int(20 * label_scale))
     f_pct = font(5, int(16 * label_scale))
     for n in nodes.values():
-        color = COLORS["highlight"] if n["id"] == highlight else COLORS[n["kind"]]
+        if upto is not None and n["col"] > upto:
+            continue
+        color = COLORS["highlight"] if n["id"] in highlight else COLORS[n["kind"]]
         d.rectangle([n["x"], n["y"], n["x"] + node_w, n["y"] + max(n["h"], 2 * SS)], fill=color)
         if show is not None and n["id"] not in show:
             continue
@@ -120,7 +128,7 @@ def draw(data, size, box, label_scale=1.0, show=None, highlight=None, short=Fals
             tx = n["x"] + node_w + 10 * SS if side == "right" else n["x"] - 10 * SS - tw
             if side == "above":
                 tx = n["x"] + node_w / 2 - tw / 2
-            d.text((tx, ty), t, font=fn, fill=color if n["kind"] not in ("segment", "revenue") or n["id"] == highlight else (60, 60, 60))
+            d.text((tx, ty), t, font=fn, fill=color if n["kind"] not in ("segment", "revenue") or n["id"] in highlight else (60, 60, 60))
             ty += fn.getbbox(t)[3] + 6 * SS
     return img, d
 

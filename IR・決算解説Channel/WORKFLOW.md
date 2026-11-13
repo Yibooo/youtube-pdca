@@ -100,7 +100,28 @@ python scripts/sankey.py episodes/<id>/data.json episodes/<id>/thumbnail.png --t
 
 ### 9. 動画を作る
 
-- 未着手（声の方式を決めたら、ここに手順を書く）。
+1. 資料の PDF を `episodes/<id>/sources/` に置く（Git には入れない）。
+2. 台本と画面を `episodes/<id>/spec.json` に書く。
+   - `scenes`：章（`chapter`）ごとにセリフ（`lines`）を並べる。章がそのまま YouTube のチャプターになる。
+   - セリフの `t` が字幕と読み上げの文。画面は `v` で指定し、次に `v` が出るまで同じ画面を出す。
+   - 画面の種類：`title`（大きな文字）、`points`（箇条書き）、`sankey`（流れ図。`upto` で途中の列まで、`highlight` で強調）、`bars`（棒グラフ）、`table`（表）、`cards`（カード）、`slide`（スライドの引用。PDF とページを指定）。
+   - 読みを変えたい語は `readings` に書く（例：`"IR": "アイアール"`）。
+3. VOICEVOX を起動して動画を作る。
+
+```bash
+~/voicevox/macos-arm64/run --host 127.0.0.1 --port 50021
+python scripts/make_video.py episodes/<id>/spec.json
+```
+
+4. `build/` にできたものを確認する。
+   - `video.mp4`：動画
+   - `thumbnail.png`：サムネ
+   - `chapters.txt`：チャプター
+   - `kana.txt`：全セリフの読み。数字と固有名詞の読みを確認する
+   - `frames/`：全画面。重なりや切れがないか確認する
+
+- 声は当面 VOICEVOX の「No.7 アナウンス」（速さ 1.1）。参考動画のような声（ElevenLabs など）に変えるかは検証中。
+- 説明会資料の PDF は「スライド＋話す原稿」の縦長ページなので、`slide` はスライドの外枠で自動的に切り出す。外枠のない資料は切り出しを確認する。
 
 ### 10. 公開前の確認
 
