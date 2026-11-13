@@ -1,3 +1,6 @@
 voice_tests/
 episodes/*/sources/
 episodes/*/build/
+.auth/
+credentials.json
+token.json
