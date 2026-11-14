@@ -100,10 +100,10 @@ python scripts/sankey.py episodes/ep01_fastretailing_fy2026/data.json episodes/e
 | 1 | [ファーストリテイリング（9983）](./episodes/ep01_fastretailing_fy2026/PLAN.md) | 2026年8月期 通期 | 🎬 アップロード済み（非公開）：[7RYUFyDC3jw](https://youtu.be/7RYUFyDC3jw) |
 | 2 | [GO（581A）](./episodes/ep02_go_fy2026/PLAN.md) | 2026年5月期 通期 | 🎬 アップロード済み（非公開）：[9__4c0xC_Ik](https://youtu.be/9__4c0xC_Ik) |
 | 3 | [キオクシアホールディングス（285A）](./episodes/ep03_kioxia_fy2026/PLAN.md) | 2026年3月期 通期 | 🎬 アップロード済み（非公開）：[z72tJk5R-ZM](https://youtu.be/z72tJk5R-ZM)。規約によりスライドは使わない |
-| 4 | [トヨタ自動車（7203）](./episodes/ep04_toyota_fy2026/PLAN.md) | 2026年3月期 通期 | 📁 動画 V2 をローカル保存（10分48秒、戦略を拡充）。未アップロード。スライドは使わない（ロゴ） |
-| 5 | [三菱UFJフィナンシャル・グループ（8306）](./episodes/ep05_mufg_fy2026/PLAN.md) | 2025年度（2026年3月期） | 📁 動画 V1 をローカル保存（8分22秒）。未アップロード。スライドは使わない |
-| 6 | [ソニーグループ（6758）](./episodes/ep06_sony_fy2026/PLAN.md) | 2025年度（2026年3月期） | 📁 動画 V1 をローカル保存（8分10秒）。未アップロード。有価証券報告書（EDINET）のみ |
-| 7 | [リクルートホールディングス（6098）](./episodes/ep07_recruit_fy2026/PLAN.md) | 2026年3月期 通期 | 📁 動画 V1 をローカル保存（7分42秒）。未アップロード。スライドは使わない |
+| 4 | [トヨタ自動車（7203）](./episodes/ep04_toyota_fy2026/PLAN.md) | 2026年3月期 通期 | 🎬 アップロード済み（非公開）：[7CuDQjZpzZk](https://youtu.be/7CuDQjZpzZk)。V2（10分48秒、戦略を5章に拡充）。スライドは使わない（ロゴ） |
+| 5 | [三菱UFJフィナンシャル・グループ（8306）](./episodes/ep05_mufg_fy2026/PLAN.md) | 2025年度（2026年3月期） | 🎬 アップロード済み（非公開）：[TDpxjZp_Vo0](https://youtu.be/TDpxjZp_Vo0)。V2（11分55秒、戦略を5章に拡充）。スライドは使わない |
+| 6 | [ソニーグループ（6758）](./episodes/ep06_sony_fy2026/PLAN.md) | 2025年度（2026年3月期） | 🎬 アップロード済み（非公開）：[b-cqKP67Z78](https://youtu.be/b-cqKP67Z78)。V2（11分17秒、戦略を5章に拡充）。有価証券報告書（EDINET）のみ |
+| 7 | [リクルートホールディングス（6098）](./episodes/ep07_recruit_fy2026/PLAN.md) | 2026年3月期 通期 | 🎬 アップロード済み（非公開）：[4fdVVMnXm8U](https://youtu.be/4fdVVMnXm8U)。V2（11分15秒、戦略を4章に拡充）。スライドは使わない |
 
 
 ## 7. 声
@@ -125,4 +125,4 @@ python scripts/sankey.py episodes/ep01_fastretailing_fy2026/data.json episodes/e
 | 4 | スライド | 毎回規約を確認し、禁止されていなければ使う |
 | 5 | 長さ | 10〜12分（OK） |
 | 6 | 企業の選び方・投稿のタイミング | 後で検討 |
-| 7 | チャンネル | 囲碁チャンネルと同じチャンネルを使う（名前は後で変える）。動画はまずローカルに保存し、後でアップロードする |
+| 7 | チャンネル | 囲碁チャンネルと同じチャンネルを使う。名前は「決算・IRの解説チャンネル（@ir-channel-jp）」に変更済み（2026-11-14 時点）。動画はまずローカルに保存し、後でアップロードする |
