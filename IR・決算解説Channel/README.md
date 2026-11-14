@@ -104,8 +104,8 @@ python scripts/sankey.py episodes/ep01_fastretailing_fy2026/data.json episodes/e
 | 5 | [三菱UFJフィナンシャル・グループ（8306）](./episodes/ep05_mufg_fy2026/PLAN.md) | 2025年度（2026年3月期） | 🎬 アップロード済み（非公開）：[TDpxjZp_Vo0](https://youtu.be/TDpxjZp_Vo0)。V2（11分55秒、戦略を5章に拡充）。スライドは使わない |
 | 6 | [ソニーグループ（6758）](./episodes/ep06_sony_fy2026/PLAN.md) | 2025年度（2026年3月期） | 🎬 アップロード済み（非公開）：[b-cqKP67Z78](https://youtu.be/b-cqKP67Z78)。V2（11分17秒、戦略を5章に拡充）。有価証券報告書（EDINET）のみ |
 | 7 | [リクルートホールディングス（6098）](./episodes/ep07_recruit_fy2026/PLAN.md) | 2026年3月期 通期 | 🎬 アップロード済み（非公開）：[4fdVVMnXm8U](https://youtu.be/4fdVVMnXm8U)。V2（11分15秒、戦略を4章に拡充）。スライドは使わない |
-| 8 | [エヌビディア（NVIDIA）](./episodes/ep08_nvidia_fy2026/PLAN.md) | 2026年1月期 通期 | 🎬 V1 作成済み（11分24秒、戦略を全体像＋5章）。未アップロード。スライドは使わない。資料は SEC EDGAR から |
-| 9 | [アマゾン（Amazon）](./episodes/ep09_amazon_fy2025/PLAN.md) | 2025年12月期 通期 | 🎬 V1 作成済み（10分7秒、戦略を全体像＋5章）。未アップロード。スライドは使わない。資料は SEC EDGAR から |
+| 8 | [エヌビディア（NVIDIA）](./episodes/ep08_nvidia_fy2026/PLAN.md) | 2026年1月期 通期 | 🎬 アップロード済み（非公開）：[86_Xf7tpXyw](https://youtu.be/86_Xf7tpXyw)。V1（11分24秒、戦略を全体像＋5章）。スライドは使わない。資料は SEC EDGAR から |
+| 9 | [アマゾン（Amazon）](./episodes/ep09_amazon_fy2025/PLAN.md) | 2025年12月期 通期 | 🎬 アップロード済み（非公開）：[jdmmIu6zFb0](https://youtu.be/jdmmIu6zFb0)。V1（10分7秒、戦略を全体像＋5章）。スライドは使わない。資料は SEC EDGAR から |
 
 
 ## 7. 声
