@@ -105,6 +105,7 @@ python scripts/sankey.py episodes/ep01_fastretailing_fy2026/data.json episodes/e
 | 6 | [ソニーグループ（6758）](./episodes/ep06_sony_fy2026/PLAN.md) | 2025年度（2026年3月期） | 🎬 アップロード済み（非公開）：[b-cqKP67Z78](https://youtu.be/b-cqKP67Z78)。V2（11分17秒、戦略を5章に拡充）。有価証券報告書（EDINET）のみ |
 | 7 | [リクルートホールディングス（6098）](./episodes/ep07_recruit_fy2026/PLAN.md) | 2026年3月期 通期 | 🎬 アップロード済み（非公開）：[4fdVVMnXm8U](https://youtu.be/4fdVVMnXm8U)。V2（11分15秒、戦略を4章に拡充）。スライドは使わない |
 | 8 | [エヌビディア（NVIDIA）](./episodes/ep08_nvidia_fy2026/PLAN.md) | 2026年1月期 通期 | 🎬 V1 作成済み（11分24秒、戦略を全体像＋5章）。未アップロード。スライドは使わない。資料は SEC EDGAR から |
+| 9 | [アマゾン（Amazon）](./episodes/ep09_amazon_fy2025/PLAN.md) | 2025年12月期 通期 | 🎬 V1 作成済み（10分7秒、戦略を全体像＋5章）。未アップロード。スライドは使わない。資料は SEC EDGAR から |
 
 
 ## 7. 声

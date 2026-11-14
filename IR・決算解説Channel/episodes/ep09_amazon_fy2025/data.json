@@ -1,0 +1,186 @@
+{
+ "title": "アマゾン（Amazon）2025年12月期 通期",
+ "subtitle": "売上高から純利益まで（米国会計基準、単位：億ドル、％は売上高に対する比率）",
+ "source": "出典：Amazon.com, Inc.「Form 10-K（2025年12月期）」2026年2月6日、「Form 8-K 決算発表」2026年2月5日、米国証券取引委員会（SEC）。図は当チャンネルが数字から作成",
+ "base": 716924,
+ "rounding": "round",
+ "gap": 34,
+ "currency": "usd",
+ "nodes": [
+  {
+   "id": "na",
+   "label": "北米",
+   "value": 426305,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "intl",
+   "label": "海外",
+   "value": 161894,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "aws",
+   "label": "AWS",
+   "value": 128725,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "rev",
+   "label": "売上高",
+   "value": 716924,
+   "col": 1,
+   "kind": "revenue",
+   "label_side": "above",
+   "pct": false
+  },
+  {
+   "id": "cogs",
+   "label": "売上原価",
+   "value": 356414,
+   "col": 2,
+   "kind": "cost"
+  },
+  {
+   "id": "ful",
+   "label": "物流センターの費用",
+   "value": 109074,
+   "col": 2,
+   "kind": "cost"
+  },
+  {
+   "id": "tech",
+   "label": "技術・インフラ費",
+   "value": 108521,
+   "col": 2,
+   "kind": "cost"
+  },
+  {
+   "id": "sga",
+   "label": "販売・管理費など",
+   "value": 62940,
+   "col": 2,
+   "kind": "cost"
+  },
+  {
+   "id": "op",
+   "label": "営業利益",
+   "value": 79975,
+   "col": 2,
+   "kind": "profit"
+  },
+  {
+   "id": "nonop",
+   "label": "投資の利益など",
+   "value": 17336,
+   "col": 2,
+   "kind": "plus",
+   "pct": false
+  },
+  {
+   "id": "pbt",
+   "label": "税引前利益",
+   "value": 97311,
+   "col": 3,
+   "kind": "profit"
+  },
+  {
+   "id": "tax",
+   "label": "法人税など",
+   "value": 19641,
+   "col": 4,
+   "kind": "cost"
+  },
+  {
+   "id": "ni",
+   "label": "純利益",
+   "value": 77670,
+   "col": 4,
+   "kind": "profit"
+  }
+ ],
+ "links": [
+  {
+   "from": "na",
+   "to": "rev",
+   "value": 426305
+  },
+  {
+   "from": "intl",
+   "to": "rev",
+   "value": 161894
+  },
+  {
+   "from": "aws",
+   "to": "rev",
+   "value": 128725
+  },
+  {
+   "from": "rev",
+   "to": "cogs",
+   "value": 356414
+  },
+  {
+   "from": "rev",
+   "to": "ful",
+   "value": 109074
+  },
+  {
+   "from": "rev",
+   "to": "tech",
+   "value": 108521
+  },
+  {
+   "from": "rev",
+   "to": "sga",
+   "value": 62940
+  },
+  {
+   "from": "rev",
+   "to": "op",
+   "value": 79975
+  },
+  {
+   "from": "op",
+   "to": "pbt",
+   "value": 79975
+  },
+  {
+   "from": "nonop",
+   "to": "pbt",
+   "value": 17336
+  },
+  {
+   "from": "pbt",
+   "to": "tax",
+   "value": 19641
+  },
+  {
+   "from": "pbt",
+   "to": "ni",
+   "value": 77670
+  }
+ ],
+ "thumbnail": {
+  "company": "アマゾン",
+  "lines": [
+   "AWSが稼ぐ",
+   "利益の57%"
+  ],
+  "accent": [
+   "利益の57%"
+  ],
+  "period": "2025年12月期 決算",
+  "show": [
+   "aws",
+   "op"
+  ],
+  "highlight": "aws"
+ }
+}
