@@ -1,0 +1,201 @@
+{
+ "title": "三菱UFJフィナンシャル・グループ（8306）2025年度（2026年3月期）",
+ "subtitle": "業務粗利益から当期純利益まで（日本基準、単位：億円、％は業務粗利益に対する比率）",
+ "source": "出典：株式会社三菱UFJフィナンシャル・グループ「2025年度 決算ハイライト」「決算短信」2026年5月15日。図は当チャンネルが数字から作成",
+ "base": 5944300,
+ "rounding": "round",
+ "gap": 52,
+ "nodes": [
+  {
+   "id": "nii",
+   "label": "資金利益（利息）",
+   "value": 3006200,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "fee",
+   "label": "手数料",
+   "value": 2389900,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "mkt",
+   "label": "市場取引など",
+   "value": 548200,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "gp",
+   "label": "業務粗利益",
+   "value": 5944300,
+   "col": 1,
+   "kind": "revenue",
+   "label_side": "above",
+   "pct": false
+  },
+  {
+   "id": "exp",
+   "label": "営業費",
+   "value": 3567100,
+   "col": 2,
+   "kind": "cost"
+  },
+  {
+   "id": "core",
+   "label": "業務純益",
+   "value": 2377200,
+   "col": 2,
+   "kind": "profit"
+  },
+  {
+   "id": "credit",
+   "label": "与信関係費用",
+   "value": 355800,
+   "col": 3,
+   "kind": "cost"
+  },
+  {
+   "id": "stock",
+   "label": "株式の売却益など",
+   "value": 486000,
+   "col": 3,
+   "kind": "plus",
+   "pct": false
+  },
+  {
+   "id": "eq",
+   "label": "持分法の利益",
+   "value": 845500,
+   "col": 3,
+   "kind": "plus"
+  },
+  {
+   "id": "otherx",
+   "label": "その他",
+   "value": 57200,
+   "col": 3,
+   "kind": "plus",
+   "pct": false
+  },
+  {
+   "id": "ord",
+   "label": "経常利益",
+   "value": 3410100,
+   "col": 4,
+   "kind": "profit"
+  },
+  {
+   "id": "tax",
+   "label": "法人税など",
+   "value": 761600,
+   "col": 5,
+   "kind": "cost"
+  },
+  {
+   "id": "spx",
+   "label": "特別損益・非支配株主分",
+   "value": 221300,
+   "col": 5,
+   "kind": "cost",
+   "pct": false
+  },
+  {
+   "id": "ni",
+   "label": "親会社株主純利益",
+   "short": "純利益",
+   "value": 2427200,
+   "col": 5,
+   "kind": "profit"
+  }
+ ],
+ "links": [
+  {
+   "from": "nii",
+   "to": "gp",
+   "value": 3006200
+  },
+  {
+   "from": "fee",
+   "to": "gp",
+   "value": 2389900
+  },
+  {
+   "from": "mkt",
+   "to": "gp",
+   "value": 548200
+  },
+  {
+   "from": "gp",
+   "to": "exp",
+   "value": 3567100
+  },
+  {
+   "from": "gp",
+   "to": "core",
+   "value": 2377200
+  },
+  {
+   "from": "core",
+   "to": "credit",
+   "value": 355800
+  },
+  {
+   "from": "core",
+   "to": "ord",
+   "value": 2021400
+  },
+  {
+   "from": "stock",
+   "to": "ord",
+   "value": 486000
+  },
+  {
+   "from": "eq",
+   "to": "ord",
+   "value": 845500
+  },
+  {
+   "from": "otherx",
+   "to": "ord",
+   "value": 57200
+  },
+  {
+   "from": "ord",
+   "to": "tax",
+   "value": 761600
+  },
+  {
+   "from": "ord",
+   "to": "spx",
+   "value": 221300
+  },
+  {
+   "from": "ord",
+   "to": "ni",
+   "value": 2427200
+  }
+ ],
+ "thumbnail": {
+  "company": "三菱UFJ（MUFG）",
+  "lines": [
+   "純利益2.4兆",
+   "3年連続",
+   "最高益の理由"
+  ],
+  "accent": [
+   "3年連続"
+  ],
+  "period": "2025年度 決算",
+  "show": [
+   "nii",
+   "ni"
+  ],
+  "highlight": "ni"
+ }
+}

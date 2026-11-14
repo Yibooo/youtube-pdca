@@ -1,0 +1,162 @@
+{
+ "title": "トヨタ自動車（7203）2026年3月期 通期",
+ "subtitle": "営業収益から当期利益まで（IFRS、単位：億円、％は営業収益に対する比率）",
+ "source": "出典：トヨタ自動車株式会社「2026年3月期 決算要旨（決算短信）」2026年5月8日。図は当チャンネルが数字から作成",
+ "base": 50684952,
+ "rounding": "floor",
+ "gap": 56,
+ "nodes": [
+  {
+   "id": "auto",
+   "label": "自動車",
+   "value": 45201924,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "fin",
+   "label": "金融",
+   "value": 4819003,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "oth",
+   "label": "その他",
+   "value": 664026,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "rev",
+   "label": "営業収益",
+   "value": 50684952,
+   "col": 1,
+   "kind": "revenue",
+   "label_side": "above",
+   "pct": false
+  },
+  {
+   "id": "cogs",
+   "label": "売上原価・金融費用",
+   "value": 42221212,
+   "col": 2,
+   "kind": "cost"
+  },
+  {
+   "id": "sga",
+   "label": "販管費",
+   "value": 4697524,
+   "col": 2,
+   "kind": "cost"
+  },
+  {
+   "id": "op",
+   "label": "営業利益",
+   "value": 3766216,
+   "col": 2,
+   "kind": "profit"
+  },
+  {
+   "id": "nonop",
+   "label": "持分法・為替など",
+   "value": 1386780,
+   "col": 2,
+   "kind": "plus"
+  },
+  {
+   "id": "pbt",
+   "label": "税引前利益",
+   "value": 5152996,
+   "col": 3,
+   "kind": "profit"
+  },
+  {
+   "id": "tax",
+   "label": "法人所得税・非支配持分",
+   "value": 1304898,
+   "col": 4,
+   "kind": "cost"
+  },
+  {
+   "id": "ni",
+   "label": "当期利益（親会社分）",
+   "short": "純利益",
+   "value": 3848098,
+   "col": 4,
+   "kind": "profit"
+  }
+ ],
+ "links": [
+  {
+   "from": "auto",
+   "to": "rev",
+   "value": 45201924
+  },
+  {
+   "from": "fin",
+   "to": "rev",
+   "value": 4819003
+  },
+  {
+   "from": "oth",
+   "to": "rev",
+   "value": 664026
+  },
+  {
+   "from": "rev",
+   "to": "cogs",
+   "value": 42221212
+  },
+  {
+   "from": "rev",
+   "to": "sga",
+   "value": 4697524
+  },
+  {
+   "from": "rev",
+   "to": "op",
+   "value": 3766216
+  },
+  {
+   "from": "op",
+   "to": "pbt",
+   "value": 3766216
+  },
+  {
+   "from": "nonop",
+   "to": "pbt",
+   "value": 1386780
+  },
+  {
+   "from": "pbt",
+   "to": "tax",
+   "value": 1304898
+  },
+  {
+   "from": "pbt",
+   "to": "ni",
+   "value": 3848098
+  }
+ ],
+ "thumbnail": {
+  "company": "トヨタ自動車",
+  "lines": [
+   "増収なのに",
+   "2割減益の",
+   "理由"
+  ],
+  "accent": [
+   "2割減益の"
+  ],
+  "period": "2026年3月期 決算",
+  "show": [
+   "auto",
+   "op"
+  ],
+  "highlight": "op"
+ }
+}

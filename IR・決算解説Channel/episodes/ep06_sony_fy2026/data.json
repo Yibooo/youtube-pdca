@@ -1,0 +1,218 @@
+{
+ "title": "ソニーグループ（6758）2025年度（2026年3月期）継続事業",
+ "subtitle": "売上高から継続事業の当期純利益まで（IFRS、単位：億円、％は売上高に対する比率）",
+ "source": "出典：ソニーグループ株式会社「第109期 有価証券報告書」2026年6月18日（EDINET）。図は当チャンネルが数字から作成",
+ "base": 12479620,
+ "rounding": "round",
+ "gap": 66,
+ "nodes": [
+  {
+   "id": "gns",
+   "label": "ゲーム＆ネットワーク",
+   "value": 4570053,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "music",
+   "label": "音楽",
+   "value": 2090534,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "pic",
+   "label": "映画",
+   "value": 1486296,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "ets",
+   "label": "テレビ・カメラなど",
+   "short": "ET&S",
+   "value": 2184815,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "iss",
+   "label": "イメージセンサーなど",
+   "value": 2059020,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "oth",
+   "label": "その他",
+   "value": 88902,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left",
+   "pct": false
+  },
+  {
+   "id": "rev",
+   "label": "売上高",
+   "value": 12479620,
+   "col": 1,
+   "kind": "revenue",
+   "label_side": "above",
+   "pct": false
+  },
+  {
+   "id": "cogs",
+   "label": "売上原価",
+   "value": 8635225,
+   "col": 2,
+   "kind": "cost"
+  },
+  {
+   "id": "sga",
+   "label": "販管費",
+   "value": 2298638,
+   "col": 2,
+   "kind": "cost"
+  },
+  {
+   "id": "oo",
+   "label": "その他の営業損益など",
+   "value": 98250,
+   "col": 2,
+   "kind": "cost",
+   "pct": false
+  },
+  {
+   "id": "op",
+   "label": "営業利益",
+   "value": 1447507,
+   "col": 2,
+   "kind": "profit"
+  },
+  {
+   "id": "pbt",
+   "label": "税引前利益",
+   "value": 1422374,
+   "col": 3,
+   "kind": "profit"
+  },
+  {
+   "id": "fin",
+   "label": "金融収支",
+   "value": 25133,
+   "col": 3,
+   "kind": "cost",
+   "pct": false
+  },
+  {
+   "id": "ni",
+   "label": "継続事業の当期純利益",
+   "short": "継続事業の純利益",
+   "value": 1055266,
+   "col": 4,
+   "kind": "profit"
+  },
+  {
+   "id": "tax",
+   "label": "法人所得税",
+   "value": 367108,
+   "col": 4,
+   "kind": "cost"
+  }
+ ],
+ "links": [
+  {
+   "from": "gns",
+   "to": "rev",
+   "value": 4570053
+  },
+  {
+   "from": "music",
+   "to": "rev",
+   "value": 2090534
+  },
+  {
+   "from": "pic",
+   "to": "rev",
+   "value": 1486296
+  },
+  {
+   "from": "ets",
+   "to": "rev",
+   "value": 2184815
+  },
+  {
+   "from": "iss",
+   "to": "rev",
+   "value": 2059020
+  },
+  {
+   "from": "oth",
+   "to": "rev",
+   "value": 88902
+  },
+  {
+   "from": "rev",
+   "to": "cogs",
+   "value": 8635225
+  },
+  {
+   "from": "rev",
+   "to": "sga",
+   "value": 2298638
+  },
+  {
+   "from": "rev",
+   "to": "oo",
+   "value": 98250
+  },
+  {
+   "from": "rev",
+   "to": "op",
+   "value": 1447507
+  },
+  {
+   "from": "op",
+   "to": "pbt",
+   "value": 1422374
+  },
+  {
+   "from": "op",
+   "to": "fin",
+   "value": 25133
+  },
+  {
+   "from": "pbt",
+   "to": "ni",
+   "value": 1055266
+  },
+  {
+   "from": "pbt",
+   "to": "tax",
+   "value": 367108
+  }
+ ],
+ "thumbnail": {
+  "company": "ソニーグループ",
+  "lines": [
+   "本業は増益",
+   "なのに",
+   "最終赤字の理由"
+  ],
+  "accent": [
+   "最終赤字の理由"
+  ],
+  "size": 70,
+  "period": "2025年度 決算",
+  "show": [
+   "music",
+   "op"
+  ],
+  "highlight": "op"
+ }
+}

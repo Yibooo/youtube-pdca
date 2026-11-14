@@ -1,0 +1,175 @@
+{
+ "title": "リクルートホールディングス（6098）2026年3月期 通期",
+ "subtitle": "売上収益から当期利益まで（IFRS、単位：億円、％は売上収益に対する比率）",
+ "source": "出典：株式会社リクルートホールディングス「2026年3月期 決算短信〔IFRS〕（連結）」2026年5月15日。図は当チャンネルが数字から作成",
+ "base": 3697351,
+ "rounding": "floor",
+ "gap": 40,
+ "nodes": [
+  {
+   "id": "hr",
+   "label": "HRテクノロジー",
+   "value": 1454440,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "stf",
+   "label": "人材派遣",
+   "value": 1679327,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "mmt",
+   "label": "マーケティング",
+   "value": 563584,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "rev",
+   "label": "売上収益",
+   "value": 3697351,
+   "col": 1,
+   "kind": "revenue",
+   "label_side": "above",
+   "pct": false
+  },
+  {
+   "id": "cogs",
+   "label": "売上原価",
+   "value": 1509156,
+   "col": 2,
+   "kind": "cost"
+  },
+  {
+   "id": "gp",
+   "label": "売上総利益",
+   "value": 2188195,
+   "col": 2,
+   "kind": "profit"
+  },
+  {
+   "id": "sga",
+   "label": "販管費など",
+   "value": 1557628,
+   "col": 3,
+   "kind": "cost"
+  },
+  {
+   "id": "op",
+   "label": "営業利益",
+   "value": 630567,
+   "col": 3,
+   "kind": "profit"
+  },
+  {
+   "id": "fin",
+   "label": "金融収支など",
+   "value": 14051,
+   "col": 3,
+   "kind": "plus",
+   "pct": false
+  },
+  {
+   "id": "pbt",
+   "label": "税引前利益",
+   "value": 644618,
+   "col": 4,
+   "kind": "profit"
+  },
+  {
+   "id": "tax",
+   "label": "法人所得税",
+   "value": 147938,
+   "col": 5,
+   "kind": "cost"
+  },
+  {
+   "id": "ni",
+   "label": "当期利益",
+   "short": "純利益",
+   "value": 496680,
+   "col": 5,
+   "kind": "profit"
+  }
+ ],
+ "links": [
+  {
+   "from": "hr",
+   "to": "rev",
+   "value": 1454440
+  },
+  {
+   "from": "stf",
+   "to": "rev",
+   "value": 1679327
+  },
+  {
+   "from": "mmt",
+   "to": "rev",
+   "value": 563584
+  },
+  {
+   "from": "rev",
+   "to": "cogs",
+   "value": 1509156
+  },
+  {
+   "from": "rev",
+   "to": "gp",
+   "value": 2188195
+  },
+  {
+   "from": "gp",
+   "to": "sga",
+   "value": 1557628
+  },
+  {
+   "from": "gp",
+   "to": "op",
+   "value": 630567
+  },
+  {
+   "from": "op",
+   "to": "pbt",
+   "value": 630567
+  },
+  {
+   "from": "fin",
+   "to": "pbt",
+   "value": 14051
+  },
+  {
+   "from": "pbt",
+   "to": "tax",
+   "value": 147938
+  },
+  {
+   "from": "pbt",
+   "to": "ni",
+   "value": 496680
+  }
+ ],
+ "thumbnail": {
+  "company": "リクルート",
+  "lines": [
+   "求人事業の",
+   "利益率37.7%",
+   "の秘密"
+  ],
+  "accent": [
+   "利益率37.7%"
+  ],
+  "period": "2026年3月期 決算",
+  "show": [
+   "hr",
+   "op"
+  ],
+  "highlight": "hr"
+ }
+}
