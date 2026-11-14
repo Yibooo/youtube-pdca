@@ -217,8 +217,102 @@ def v_slide(c, v, ctx):
     c.text((W / 2, y / sankey.SS + sl.height / sankey.SS + 22), "出典：" + v["source"], font(5, 24), fill=SUB, anchor="ma")
 
 
+def arrow(c, cx, cy, w=34, h=44, fill=(150, 150, 150)):
+    """右向きの三角の矢印（フォントに▶がないため図形で描く）"""
+    c.d.polygon([((cx - w / 2) * sankey.SS, (cy - h / 2) * sankey.SS), ((cx + w / 2) * sankey.SS, cy * sankey.SS),
+                 ((cx - w / 2) * sankey.SS, (cy + h / 2) * sankey.SS)], fill=fill)
+
+
+def v_pillars(c, v, ctx):
+    """戦略の柱：列ごとに見出しと中身を並べる。hl：強調する列、hl_items：強調する [列, 行]"""
+    c.text((120, 110), v["title"], font(8, 48))
+    if v.get("lead"):
+        c.text((120, 178), v["lead"], font(6, 30), fill=SUB)
+    cols = v["cols"]
+    n = len(cols)
+    top = 240 if v.get("lead") else 200
+    gw = (1680 - 40 * (n - 1)) / n
+    hl = v.get("hl", list(range(n)))
+    hli = [tuple(x) for x in v.get("hl_items", [])]
+    for i, col in enumerate(cols):
+        x = 120 + i * (gw + 40)
+        on = i in hl
+        kind = COLORS[col.get("kind", "profit")]
+        c.rrect((x, top, x + gw, top + 86), r=14, fill=kind if on else (205, 205, 205))
+        c.text((x + gw / 2, top + 43), col["h"], font(8, 38), fill=(255, 255, 255), anchor="mm")
+        y = top + 110
+        ih = min(190, (880 - y) / max(1, len(col["items"])) - 18)
+        for j, it in enumerate(col["items"]):
+            ion = on and (not hli or (i, j) in hli)
+            c.rrect((x, y, x + gw, y + ih), r=12, fill=(255, 255, 255), outline=kind if ion else (220, 220, 220), width=3 * sankey.SS)
+            head, _, body = it.partition("｜")
+            fh = font(8, 38)
+            c.text((x + 30, y + 20), head, fh, fill=INK if ion else (175, 175, 175))
+            if body:
+                fb = font(5, 31)
+                yy = y + 76
+                for line in wrap(fb, body, gw - 60)[:max(1, int((ih - 80) // 42))]:
+                    c.text((x + 30, yy), line, fb, fill=INK if ion else (185, 185, 185))
+                    yy += 42
+            y += ih + 18
+
+
+def v_flow(c, v, ctx):
+    """矢印でつないだ流れ。steps：[{h, b}]、hl：強調する段"""
+    c.text((120, 110), v["title"], font(8, 48))
+    if v.get("lead"):
+        c.text((120, 178), v["lead"], font(6, 30), fill=SUB)
+    steps = v["steps"]
+    n = len(steps)
+    aw = 70
+    gw = (1680 - aw * (n - 1)) / n
+    top, h = 250, v.get("height", 600)
+    hl = v.get("hl", list(range(n)))
+    for i, st in enumerate(steps):
+        x = 120 + i * (gw + aw)
+        on = i in hl
+        kind = COLORS[st.get("kind", "profit")]
+        c.rrect((x, top, x + gw, top + h), r=18, fill=(255, 255, 255), outline=kind if on else (220, 220, 220), width=4 * sankey.SS)
+        c.rrect((x, top, x + gw, top + 96), r=18, fill=kind if on else (215, 215, 215))
+        c.text((x + gw / 2, top + 48), st["h"], font(8, 40 if n <= 3 else 34), fill=(255, 255, 255), anchor="mm")
+        fb = font(6 if on else 5, 37 if n <= 3 else 32)
+        yy = top + 130
+        for line in wrap(fb, st.get("b", ""), gw - 56)[:9]:
+            c.text((x + 28, yy), line, fb, fill=INK if on else (185, 185, 185))
+            yy += 56 if n <= 3 else 48
+        if i < n - 1:
+            arrow(c, x + gw + aw / 2, top + h / 2)
+    if v.get("note"):
+        c.text((120, 880), v["note"], font(5, 26), fill=SUB)
+
+
+def v_kpi(c, v, ctx):
+    """大きな数字の推移。items：[{label, value, sub}]、hl：強調する項目"""
+    c.text((120, 110), v["title"], font(8, 48))
+    items = v["items"]
+    n = len(items)
+    aw = 90
+    gw = (1680 - aw * (n - 1)) / n
+    hl = v.get("hl", list(range(n)))
+    for i, it in enumerate(items):
+        x = 120 + i * (gw + aw)
+        on = i in hl
+        col = COLORS[it.get("kind", "profit")] if on else (190, 190, 190)
+        c.text((x + gw / 2, 300), it["label"], font(7, 46), fill=INK if on else (170, 170, 170), anchor="ma")
+        c.text((x + gw / 2, 380), it["value"], font(8, 120), fill=col, anchor="ma")
+        fs = font(5, 34)
+        yy = 560
+        for line in wrap(fs, it.get("sub", ""), gw - 20)[:3]:
+            c.text((x + gw / 2, yy), line, fs, fill=SUB, anchor="ma")
+            yy += 48
+        if i < n - 1:
+            arrow(c, x + gw + aw / 2, 450, 40, 54)
+    if v.get("note"):
+        c.text((120, 880), v["note"], font(5, 26), fill=SUB)
+
+
 VISUALS = {"title": v_title, "points": v_points, "sankey": v_sankey, "bars": v_bars,
-           "table": v_table, "cards": v_cards, "slide": v_slide}
+           "table": v_table, "cards": v_cards, "slide": v_slide, "pillars": v_pillars, "flow": v_flow, "kpi": v_kpi}
 
 
 def frame(v, chapter, caption, ctx):
