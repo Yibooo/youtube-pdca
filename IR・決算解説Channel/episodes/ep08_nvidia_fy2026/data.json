@@ -1,0 +1,186 @@
+{
+ "title": "エヌビディア（NVIDIA）2026年1月期 通期",
+ "subtitle": "売上高から純利益まで（米国会計基準、単位：億ドル、％は売上高に対する比率）",
+ "source": "出典：NVIDIA Corporation「Form 10-K（2026年1月期）」「Form 8-K 決算発表」2026年2月25日、米国証券取引委員会（SEC）。図は当チャンネルが数字から作成",
+ "base": 215938,
+ "rounding": "floor",
+ "gap": 40,
+ "currency": "usd",
+ "nodes": [
+  {
+   "id": "dc",
+   "label": "データセンター",
+   "value": 193737,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "gm",
+   "label": "ゲーム",
+   "value": 16042,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "oth",
+   "label": "その他",
+   "value": 6159,
+   "col": 0,
+   "kind": "segment",
+   "label_side": "left"
+  },
+  {
+   "id": "rev",
+   "label": "売上高",
+   "value": 215938,
+   "col": 1,
+   "kind": "revenue",
+   "label_side": "above",
+   "pct": false
+  },
+  {
+   "id": "cogs",
+   "label": "売上原価",
+   "value": 62475,
+   "col": 2,
+   "kind": "cost"
+  },
+  {
+   "id": "gp",
+   "label": "売上総利益",
+   "value": 153463,
+   "col": 2,
+   "kind": "profit"
+  },
+  {
+   "id": "rd",
+   "label": "研究開発費",
+   "value": 18497,
+   "col": 3,
+   "kind": "cost"
+  },
+  {
+   "id": "sga",
+   "label": "販管費",
+   "value": 4579,
+   "col": 3,
+   "kind": "cost"
+  },
+  {
+   "id": "op",
+   "label": "営業利益",
+   "value": 130387,
+   "col": 3,
+   "kind": "profit"
+  },
+  {
+   "id": "oi",
+   "label": "投資の利益など",
+   "value": 11063,
+   "col": 3,
+   "kind": "plus",
+   "pct": false
+  },
+  {
+   "id": "pbt",
+   "label": "税引前利益",
+   "value": 141450,
+   "col": 4,
+   "kind": "profit"
+  },
+  {
+   "id": "tax",
+   "label": "法人税",
+   "value": 21383,
+   "col": 5,
+   "kind": "cost"
+  },
+  {
+   "id": "ni",
+   "label": "純利益",
+   "value": 120067,
+   "col": 5,
+   "kind": "profit"
+  }
+ ],
+ "links": [
+  {
+   "from": "dc",
+   "to": "rev",
+   "value": 193737
+  },
+  {
+   "from": "gm",
+   "to": "rev",
+   "value": 16042
+  },
+  {
+   "from": "oth",
+   "to": "rev",
+   "value": 6159
+  },
+  {
+   "from": "rev",
+   "to": "cogs",
+   "value": 62475
+  },
+  {
+   "from": "rev",
+   "to": "gp",
+   "value": 153463
+  },
+  {
+   "from": "gp",
+   "to": "rd",
+   "value": 18497
+  },
+  {
+   "from": "gp",
+   "to": "sga",
+   "value": 4579
+  },
+  {
+   "from": "gp",
+   "to": "op",
+   "value": 130387
+  },
+  {
+   "from": "op",
+   "to": "pbt",
+   "value": 130387
+  },
+  {
+   "from": "oi",
+   "to": "pbt",
+   "value": 11063
+  },
+  {
+   "from": "pbt",
+   "to": "tax",
+   "value": 21383
+  },
+  {
+   "from": "pbt",
+   "to": "ni",
+   "value": 120067
+  }
+ ],
+ "thumbnail": {
+  "company": "エヌビディア",
+  "lines": [
+   "売上100ドルで",
+   "営業利益60ドル"
+  ],
+  "accent": [
+   "営業利益60ドル"
+  ],
+  "period": "2026年1月期 決算",
+  "show": [
+   "dc",
+   "op"
+  ],
+  "highlight": "op"
+ }
+}

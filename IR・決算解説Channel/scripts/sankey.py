@@ -5,6 +5,7 @@
     python sankey.py <data.json> <out.png> [--thumb]
 
 - data.json の nodes / links は決算短信の数字（百万円）をそのまま書く。表示は億円に丸める。
+  米国企業は百万ドルで書き、"currency": "usd" を入れると「億ドル」で表示する。
 - --thumb を付けると、1280×720 のサムネ用に、図を右寄せにして見出しを左に大きく載せる。
 """
 import json
@@ -44,6 +45,8 @@ def oku(v, data=None):
     if dec:
         return f"{o:,.{dec}f}億"
     o = int(o)
+    if data.get("currency") == "usd":  # 百万ドル → 「2,159億ドル」（米国企業。兆には直さない）
+        return f"{o:,}億ドル"
     if o >= 10000:
         return f"{o // 10000}兆{o % 10000:,}億" if o % 10000 else f"{o // 10000}兆"
     return f"{o:,}億"
